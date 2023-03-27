@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/ress.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header id="js-header" class="header">
+    <div id="js-header_main" class="header_main">
+      <a href="#" class="header_main_logo_area">
+        <img src="images/JDI_logo.png" alt="JDI_logo" class="header_main_logo"/>
+        <div>
+          <div class="text-xs sm_above_only">
+            Japan Detective Investigation Agency
+          </div>
+          <div>
+            <span class="text-lg font_weight-500 sm_above_only">ストーカー・嫌がらせ被害対策センター</span><br class="lg_only" />
+          </div>
+        </div>
+      </a>
+      <div class="header_offer">
+        <div class="header_offer_dial md_above_only">
+          <div class="free_dial">
+            <img src="images/icons/free_dial_red.png" alt="フリーダイヤル" class="free_dial_icon" />
+            <span class="text-3xl color-main_orange font_weight-700">0120-334-994</span>
+          </div>
+          <div class="header_offer_dial_caption main_orange_grade text-sm">
+            24時間・365日・相談無料
+          </div>
+        </div>
+        <div class="header_offer_other">
+          <a href="#" class="header_offer_other_item offer_item bg-line line">
+            <img src="images/icons/line_icon.png" alt="LINE ロゴ" class="header_offer_other_icon offer_icon"/>
+            <p class="text-sm font_weight-500  md_above_only">LINE無料相談</p>
+          </a>
+          <a href="#contact" class="header_offer_other_item offer_item main_orange_grade">
+            <img src="images/icons/mail_icon.png" alt="メール ロゴ" class="header_offer_other_icon offer_icon" />
+            <p class="text-sm font_weight-500  md_above_only">メール無料相談</p>
+          </a>
+          <!-- ここから下はmdサイズ未満の時にだけ表示するもの -->
+          <div class="header_offer_other_item offer_item main_orange_grade md_only">
+            <img src="images/icons/free_dial_w.png" alt="フリーダイヤル ロゴ" class="header_offer_other_icon offer_icon" />
+          </div>
+          <div id="js-nav_menu" class="header_menu_btn md_only">
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- ここから下段 -->
+    <nav id="js-global_nav" class="global_nav main_green_grade">
+      <a href="#" class="global_nav_logo">
+        <img src="images/JDI_logo.png" alt="JDI_logo" class="global_nav_logo_img"/>
+        <div>
+          <div class="global_nav_logo_caption">
+            Japan Detective Investigation Agency
+          </div>
+          <div class="text-sm font_weight-500">
+            ストーカー・嫌がらせ被害対策センター
+          </div>
+        </div>
+      </a>
+      <div class="nav_menu">
+        <a href="#" class="nav_menu_item">
+          私たちの特徴
+        </a>
+        <div id="js-nav_menu_item_parent" class="nav_menu_item parent">
+          調査項目
+          <div id="js-child_list" class="child_list">
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">浮気調査</p>
+              <img src="images/icons/icon_cheating_p.svg" alt="浮気調査" class="child_list_item_img" />
+            </a>
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">人探し・行方調査</p>
+              <img src="images/icons/icon_looking_p.svg" alt="行方調査" class="child_list_item_img" />
+            </a>
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">結婚信用調査</p>
+              <img src="images/icons/icon_marriage_p.svg" alt="結婚信用調査" class="child_list_item_img" />
+            </a>
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">ストーカー対策</p>
+              <img src="images/icons/icon_stalker_p.svg" alt="ストーカー対策" class="child_list_item_img" />
+            </a>
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">家出人・失踪者捜索</p>
+              <img src="images/icons/icon_runaway_p.svg" alt="失踪者捜索" class="child_list_item_img" />
+            </a>
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">行動調査</p>
+              <img src="images/icons/icon_action_p.svg" alt="行動調査" class="child_list_item_img" />
+            </a>
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">素行調査</p>
+              <img src="images/icons/icon_behavior_p.svg" alt="素行調査" class="child_list_item_img" />
+            </a>
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">信用調査</p>
+              <img src="images/icons/icon_building_p.svg" alt="信用調査" class="child_list_item_img" />
+            </a>
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">嫌がらせ調査</p>
+              <img src="images/icons/icon_swearing_p.svg" alt="嫌がらせ調査" class="child_list_item_img" />
+            </a>
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">いじめ・ハラスメント捜索</p>
+              <img src="images/icons/icon_harassment_p.svg" alt="いじめ・ハラスメント捜索" class="child_list_item_img" />
+            </a>
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">盗聴器・盗聴器捜索</p>
+              <img src="images/icons/icon_eavesdropping_p.svg" alt="盗聴器捜索" class="child_list_item_img" />
+            </a>
+            <a href="#" class="child_list_item">
+              <p class="child_list_item_title">海外調査</p>
+              <img src="images/icons/icon_passport_p.svg" alt="海外調査" class="child_list_item_img" />
+            </a>
+          </div>
+        </div>
+        <a href="#" class="nav_menu_item">
+          依頼の流れ
+        </a>
+        <a href="#" class="nav_menu_item">
+          お客様の声
+        </a>
+        <a href="#" class="nav_menu_item">
+          会社案内
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="kv">
+    
+      <p class="kv_message_main">ひとりで悩みを抱えていませんか?</p>
+      <div class="kv_message_sub">
+        <p class="kv_message_sub_inner">
+          私たちは
+          <span class="kv_message_emphasis">問題</span>を
+          <span class="kv_message_emphasis">解決</span>
+          に導く<br class="sm_only">
+          パートナーです
+        </p>
+      </div>
+  </section>
+
+  <!-- このような被害やトラブルに対応しております。 -->
+  <section>
+    <div class="main_green_grade">
+      <h2 class="text-4xl color-white cases_title belt_message">
+        このような被害やトラブルに対応しております。
+      </h2>
+    </div>
+  
+    <ul class="cases_list">
+      <li class="cases_list_item">
+        <div class="cases_list_item_inner">
+          <div class="cases_list_item_content">
+            <header>
+              <span class="color-string_green font_weight-500 text-8xl">「ストーカー被害」</span>
+            </header>
+            <div class="text-sm mt-20">
+              別れたはずの交際相手・配偶者が行く先々を尾行し、つきまとったり、待ち伏せしている。教えていないのに自分の居場所が知られている…。
+              恋愛感情のもつれや恨みなどから起こるストーカー行為の被害でお悩みの方へ、カウンセラーがお客様の気持ちに寄り添って解決策をご提案いたします。
+            </div>
+            <a href="#" class="cases_list_item_btn main_orange_grade mt-20">
+              <p class="color-white mr-5 text-sm">「ストーカー被害対策」</p>
+              <img src="images/arrow_circle.png" alt="矢印" class="cases_list_item_btn_arrow" />
+            </a>
+          </div>
+          <img src="images/cases_01.png" class="cases_list_item_img"/>
+        </div>
+      </li>
+
+      <li class="cases_list_item">
+        <div class="cases_list_item_inner">
+          <div class="cases_list_item_content">
+            <header>
+              <span class="color-main_purple font_weight-500 text-8xl">「嫌がらせ被害」</span>
+            </header>
+            <div class="text-sm mt-20">
+              生活の様子を監視している、わざと大きな音を出して威嚇してくる、家の前にごみなどを撒かれる、車や自転車に傷をつけられる、郵便物や洗濯物を盗まれる、根も葉もない噂を流される…。
+              そんな陰湿な嫌がらせ被害に対して、誰が・どのような嫌がらせをしているのか証拠を取得して、
+              嫌がらせをやめさせる最適な対策プランをご提案いたします。
+            </div>
+            <a href="#" class="cases_list_item_btn main_orange_grade mt-20">
+              <p class="color-white mr-5 text-sm">嫌がらせ被害対策</p>
+              <img src="images/arrow_circle.png" alt="矢印" class="cases_list_item_btn_arrow" />
+            </a>
+          </div>
+          <img src="images/cases_02.png" class="cases_list_item_img"/>
+        </div>
+      </li>
+
+      <li class="cases_list_item">
+        <div class="cases_list_item_inner">
+          <div class="cases_list_item_content">
+            <header>
+              <span class="color-main_orange font_weight-500 text-8xl">「いじめ・ハラスメント被害」</span>
+            </header>
+            <div class="text-sm mt-20">
+              学校で嫌がる行為の強要された、集団での無視される、わいせつ画像を拡散された…。職場で身体を触られたり、暴言や罵声を浴びせられたり、
+              人事評価や評判を不当に下げられた…などでお悩みの方やご家族からのご相談にも対応しております。
+              どんなことでもまずはご相談ください。
+            </div>
+            <a href="#" class="cases_list_item_btn main_orange_grade mt-20">
+              <p class="color-white mr-5 text-sm">いじめ・ハラスメント被害対策</p>
+              <img src="images/arrow_circle.png" alt="矢印" class="cases_list_item_btn_arrow" />
+            </a>
+          </div>
+          <img src="images/cases_03.png" class="cases_list_item_img"/>
+        </div>
+      </li>
+
+      <li class="cases_list_item">
+        <div class="cases_list_item_inner">
+          <div class="cases_list_item_content">
+          <header>
+            <span class="color-main_purple font_weight-500 text-8xl">「未定」</span>
+          </header>
+          <div class="text-sm mt-20">
+            ダミーテキストが入ります
+          </div>
+          <a href="#" class="cases_list_item_btn main_orange_grade mt-20">
+            <p class="color-white mr-5 text-sm">未定</p>
+            <img src="images/arrow_circle.png" alt="矢印" class="cases_list_item_btn_arrow" />
+          </a>
+        </div>
+        <img src="images/cases_04.png" class="cases_list_item_img"/>
+        </div>
+      </li>
+    </ul>
+  </section>
+  
+  <!-- first offer -->
+  <section class="first_offer">
+    <div class="first_offer_message">
+      <div class="color-main_orange font_weight-500 text-2xl">
+        浮気・人探し・結婚信用・ストーカー対策など<br class="lg_above_only">
+        <span class="xl_above_only">&emsp;&emsp;</span>
+        私たち専門家にどんなことでもご相談ください！
+      </div>
+      <div class="pt-35">
+        お客様にとって最適なプランのご提案と質の高い調査を行い、望む未来を叶えるために全力でサポートをさせて頂きます。
+      </div>
+    </div>
+    <img src="images/staffs.jpg" alt="staffs" class="first_offer_img">
+  </section>
+
+  <section class="main_green_grade pt-40 pb-40">
+    <div class="text-3xl color-white belt_message">
+      他社で断られたり、失敗したケースでもお任せください。<br class="lg_above_only">
+      法的対応が必要な場合、浮気・各種トラブルに強い弁護士のご紹介も可能です。
+    </div>
+  </section>
+
+  <!-- はじめてご利用になるお客様へ -->
+  <section>
+    <div class="section_inner">
+      <h2 class="text-6xl center">
+        <div class="bubble_deco">
+          はじめてご利用になるお客様へ
+          <span class="bubble_deco_inner front"></span>
+          <span class="bubble_deco_inner rear"></span>
+        </div>
+      </h2>
+    </div>
+
+    <ul>
+      <li class="first_time first">
+        <div class="first_time_img first"></div>
+        <div class="first_time_content first">
+          <header class="font_weight-500 text-4xl">
+            はじめて探偵事務所をご利用になる方へ
+          </header>
+          <div class="first_time_desc mt-20 color-string_gray">
+            はじめて探偵を利用する方は、信頼できる探偵社の選び方・調査費用・証拠の使い方など、多くの不安や疑問を抱えてご相談される方がほとんどです。
+            「お客様の不安や疑問を解消する」という探偵本来の役割を忘れずに「はじめてのお客様に親身になって寄り添い、安心して依頼できる環境作り」を心がけております。
+          </div>
+          <div class="main_orange_grade performance mt-20">
+            <p class="center">
+              <span class="text-sm color-white">年間相談件数</span>&emsp;
+              <span class="text-sm color-white">約</span>
+              <span class="text-4xl color-white font_weight-500">4500</span>
+              <span class="text-sm color-white">件</span>
+              <br class="lg_only" />
+              <span class="text-xs color-white">（当社調べ・年間平均値）</span>
+            </p>
+            <p class="center mt-10">
+              <span class="text-sm color-white">対応エリア</span>&emsp;
+              <span class="text-3xl color-white font_weight-500">日本全国</span>
+              <br class="lg_only" />
+              <span class="text-xs color-white">（一部海外を含む）</span>
+            </p>
+          </div>
+        </div>
+        
+      </li>
+      <li class="first_time second">
+        <div class="first_time_img second"></div>
+        <div class="first_time_content second">
+          <header class="font_weight-500 text-4xl">
+            弁護士推奨の探偵事務所だから安心。
+          </header>
+          <div class="first_time_desc mt-20 color-string_gray">
+            多くの弁護士事務所が推奨する探偵事務所として、難しい調査や他社で失敗したケースであっても、最適な調査プランの提案力や証拠や情報収集を行う優れた調査力が強みであり、お客様にも高い評価をいただいております。
+            調査後、お客様には当社のパートナー弁護士を活用していただき、円滑な問題解決を行っていただけるようサポート体制も整っております。
+          </div>
+          <div class="first_time_desc mt-20 font_weight-500">
+            「皆さまが抱える問題を解決したい」という熱意と責任感をもって、ご相談とご依頼をお受けしております。
+          </div>
+        </div>
+        
+      </li>
+    </ul>
+  </section>
+
+  <!-- こんな方へ -->
+  <section class="user_list">
+    <ul>
+      <li class="user_list_item">
+        <div class="user_list_item_inner">
+          <div class="user_list_item_content">
+            <header class="text-lg font_weight-500">
+              はじめて探偵・興信所を利用する方へ
+            </header>
+            <div class="text-sm mt-10">
+              はじめて探偵・興信所を利用する方は必ずご相談ください。正しい探偵・興信所の選び方や依頼時の注意点など初めて探偵・興信所を利用する方の相談に対応しています。
+              一人で悩まず、ぜひ一度ご相談ください。
+            </div>
+          </div>
+          <img src="images/user_01.jpg" alt="user" class="user_list_item_img"/>
+        </div>
+      </li>
+
+      <li class="user_list_item">
+        <div class="user_list_item_inner">
+          <div class="user_list_item_content">
+            <header class="text-lg font_weight-500">
+              真実を知って前に進みたい方へ
+            </header>
+            <div class="text-sm mt-10">
+              真実を知ることで進むべき道が見えてきます。真実に向き合うためには少しの勇気が必要ですが、それまでの憶測や推測はすべて打ち消され、解決策を見出すことが出来るでしょう。
+            </div>
+          </div>
+          <img src="images/user_02.jpg" alt="user" class="user_list_item_img"/>
+        </div>
+      </li>
+
+      <li class="user_list_item">
+        <div class="user_list_item_inner">
+          <div class="user_list_item_content">
+            <header class="text-lg font_weight-500">
+              今の悩みを解決したい方へ
+            </header>
+            <div class="text-sm mt-10">
+              「悩み」を抱えるということは「疑念や不安を払拭できない」状態と言えます。悩みを解決するために必要な「情報」を得て解決する方法を知ったとき、それは悩みではなくなります。
+            </div>
+          </div>
+          <img src="images/user_03.jpg" alt="user" class="user_list_item_img"/>
+        </div>
+      </li>
+
+      <li class="user_list_item">
+        <div class="user_list_item_inner">
+          <div class="user_list_item_content">
+            <header class="text-lg font_weight-500">
+              他社で断られたり・失敗して困っている方へ
+            </header>
+            <div class="text-sm mt-10">
+              探偵・興信所にも専門分野があります。失敗しない調査を行うには、正しい知識と豊富な経験、
+              そして優れた専門性が求められるため、実績のある専門家を選ぶことが大切です。他社で断られたり、失敗した場合でもご相談ください。
+            </div>
+          </div>
+          <img src="images/user_04.jpg" alt="user" class="user_list_item_img"/>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 日本探偵調査センターの特徴 -->
+  <section>
+    <div class="section_title">
+      <div class="section_title_content">
+        <img src="images/line_deco_01.png" alt="deco" class="section_title_deco front" />
+        <img src="images/line_deco_01.png" alt="deco" class="section_title_deco rear" />
+        <p class="section_title_content_message section_border text-6xl">日本探偵調査センターの特徴</p>
+        <p class="section_title_content_message">はじめてのお客様に選ばれる５つの理由</p>
+      </div>
+    </div>
+
+    <ul>
+      <li class="feature_item">
+        <div  class="feature_item_inner">
+          <div class="feature_item_sign main_green_grade">
+            <p class="text-xs color-white">選ばれる理由</p>
+            <p class="feature_item_sign_number color-white">1</p>
+          </div>
+          <div class="feature_item_content">
+            <div class="feature_item_content_header">
+              <header class="text-3xl color-main_purple font_weight-500">
+                ご相談時にノウハウを分かりやすく解説
+              </header>
+              <p class="color-main_orange text-xl font_weight-500">
+                当社の強みが理解できて安心！
+              </p>
+            </div>
+            <p class="text-sm color-string_gray feature_item_content_desc">
+              ご相談の時点で「どうやって証拠を取得するか」「どのタイミングを狙うべきか」「何時間の調査で証拠が取れそうか」など
+              具体的な調査手法やノウハウを惜しみなく解説して、お客様に合った最適な調査プランと料金を分かりやすく丁寧に説明します。
+            </p>
+          </div>
+          <img src="images/feature_01.png" alt="feature" class="feature_item_img">
+        </div>
+      </li>
+
+      <li class="feature_item">
+        <div  class="feature_item_inner">
+          <div class="feature_item_sign main_green_grade">
+            <p class="text-xs color-white">選ばれる理由</p>
+            <p class="feature_item_sign_number color-white">2</p>
+          </div>
+          <div class="feature_item_content">
+            <div class="feature_item_content_header">
+              <header class="text-3xl color-main_purple font_weight-500">
+                丁寧で分かりやすい料金説明
+              </header>
+              <p class="color-main_orange text-base font_weight-500">
+                だから安心して依頼しやすい！
+              </p>
+            </div>
+            <p class="text-sm color-string_gray feature_item_content_desc">
+              はじめて依頼される方にとって料金を気にされる方が多いと思いますが、当センターでは面談時に調査日数・調査時間・調査料金・諸経費等の詳しいご説明と内訳及び総額の提示をしております。
+              契約書記載の金額以外に追加料金や水増し料金などは一切かかることはありませんのでご安心ください。
+            </p>
+          </div>
+          <img src="images/feature_02.png" alt="feature" class="feature_item_img">
+        </div>
+      </li>
+
+      <li class="feature_item">
+        <div  class="feature_item_inner">
+          <div class="feature_item_sign main_green_grade">
+            <p class="text-xs color-white">選ばれる理由</p>
+            <p class="feature_item_sign_number color-white">3</p>
+          </div>
+          <div class="feature_item_content">
+            <div class="feature_item_content_header">
+              <header class="text-3xl color-main_purple font_weight-500">
+                業界屈指の調査力と提案力
+              </header>
+              <p class="color-main_orange text-xl font_weight-500">
+                お客様の満足度が高い！
+              </p>
+            </div>
+            <p class="text-sm color-string_gray feature_item_content_desc">
+              優秀なベテラン調査員による調査チームが証拠をしっかり押さえます。技術力や経験のばらつきがないよう、調査員研修や現場教育にも力を入れています。また、調査で取得した証拠を活用して、
+              警察署への同行や被害届のための事情説明といった警察対応や加害者との話し合いや直接交渉など速やかな問題解決につながる様々な対策業務を提供しており、依頼者の皆さまからは高い評価をいただいております。
+            </p>
+          </div>
+          <img src="images/feature_03.png" alt="feature" class="feature_item_img">
+        </div>
+      </li>
+
+      <li class="feature_item">
+        <div  class="feature_item_inner">
+          <div class="feature_item_sign main_green_grade">
+            <p class="text-xs color-white">選ばれる理由</p>
+            <p class="feature_item_sign_number color-white">4</p>
+          </div>
+          <div class="feature_item_content">
+            <div class="feature_item_content_header">
+              <header class="text-3xl color-main_purple font_weight-500">
+                料金割引特典・失敗保証制度
+              </header>
+              <p class="color-main_orange text-xl font_weight-500">
+                お客様第一のサービスが充実！
+              </p>
+            </div>
+            <p class="text-sm color-string_gray feature_item_content_desc">
+              お客様第一の特典・制度として、長時間の調査を必要とするお客様には「長時間割引特典」で通常料金よりも安価な単価設定でご依頼いただけます。
+              また、対象者を見失うなどして調査が失敗した場合でも、追加料金など一切なく再調査を行う「失敗保証制度」もご用意しております。
+            </p>
+          </div>
+          <img src="images/feature_04.png" alt="feature" class="feature_item_img">
+        </div>
+      </li>
+
+      <li class="feature_item">
+        <div  class="feature_item_inner">
+          <div class="feature_item_sign main_green_grade">
+            <p class="text-xs color-white">選ばれる理由</p>
+            <p class="feature_item_sign_number color-white">5</p>
+          </div>
+          <div class="feature_item_content">
+            <div class="feature_item_content_header">
+              <header class="text-3xl color-main_purple font_weight-500">
+                弁護士との連携・助言・サポート
+              </header>
+              <p class="color-main_orange text-xl font_weight-500">
+                専門家のバックアップで安心感が違う！
+              </p>
+            </div>
+            <p class="text-sm color-string_gray feature_item_content_desc">
+              お客様の目的が調査（真実を知ること）だけでなく、「解決すること」である場合、皆さまが望む未来や思い描く未来を実現するために、
+              弁護士や専門家を紹介・活用するバックアップ制度をご利用ください。浮気・各種トラブルに強い弁護士の紹介や弁護士探しのお手伝いも無償で行っております。
+            </p>
+          </div>
+          <img src="images/feature_05.png" alt="feature" class="feature_item_img">
+        </div>
+      </li>
+
+    </ul>
+  </section>
+  
+  <!-- 調査項目のご案内 -->
+  <section>
+    <div class="section_title">
+      <div class="section_title_content">
+        <p class="section_title_content_message section_border text-6xl">調査項目のご案内</p>
+        <p class="section_title_content_message">探偵調査サービス</p>
+      </div>
+    </div>
+    <div class="main_green_grade">
+      <div class="section_inner">
+        <ul class="survey_list_wrapper">
+          <li class="survey_list">
+            <div class="survey_list_inner">
+              <a href="#" class="survey_list_item main">
+                <header class="survey_list_item_title center">浮気調査</header>
+                <img src="images/icons/icon_cheating_p.svg" alt="浮気調査" class="survey_list_item_img" />
+              </a>
+              <a href="#" class="survey_list_item main">
+                <header class="survey_list_item_title center">人探し<br>行方調査</header>
+                <img src="images/icons/icon_looking_p.svg" alt="行方調査" class="survey_list_item_img" />
+              </a>
+              <a href="#" class="survey_list_item main">
+                <header class="survey_list_item_title center">結婚信用調査</header>
+                <img src="images/icons/icon_marriage_p.svg" alt="結婚信用調査" class="survey_list_item_img" />
+              </a>
+              <a href="#" class="survey_list_item main">
+                <header class="survey_list_item_title center">ストーカー対策</header>
+                <img src="images/icons/icon_stalker_p.svg" alt="ストーカー対策" class="survey_list_item_img" />
+              </a href="#">
+            </div>
+          </li>
+
+          <li class="survey_list">
+            <div class="survey_list_inner">
+              <a href="#" class="survey_list_item regular">
+                <header class="survey_list_item_title">家出人<br>失踪者捜索</header>
+                <img src="images/icons/icon_runaway_p.svg" alt="失踪者捜索" class="survey_list_item_img" />
+              </a>
+              <a href="#" class="survey_list_item regular">
+                <header class="survey_list_item_title">行動調査</header>
+                <img src="images/icons/icon_action_p.svg" alt="行動調査" class="survey_list_item_img" />
+              </a>
+              <a href="#" class="survey_list_item regular">
+                <header class="survey_list_item_title">素行調査</header>
+                <img src="images/icons/icon_behavior_p.svg" alt="素行調査" class="survey_list_item_img" />
+              </a>
+              <a href="#" class="survey_list_item regular">
+                <header class="survey_list_item_title">信用調査</header>
+                <img src="images/icons/icon_building_p.svg" alt="信用調査" class="survey_list_item_img" />
+              </a>
+              <a href="#" class="survey_list_item regular">
+                <header class="survey_list_item_title">嫌がらせ調査</header>
+                <img src="images/icons/icon_swearing_p.svg" alt="嫌がらせ調査" class="survey_list_item_img" />
+              </a>
+              <a href="#" class="survey_list_item regular">
+                <header class="survey_list_item_title">いじめ・ハラスメント捜索</header>
+                <img src="images/icons/icon_harassment_p.svg" alt="いじめ・ハラスメント捜索" class="survey_list_item_img" />
+              </a>
+              <a href="#" class="survey_list_item regular">
+                <header class="survey_list_item_title">盗聴器<br>盗聴器捜索</header>
+                <img src="images/icons/icon_eavesdropping_p.svg" alt="盗聴器捜索" class="survey_list_item_img" />
+              </a>
+              <a href="#" class="survey_list_item regular">
+                <header class="survey_list_item_title">海外調査</header>
+                <img src="images/icons/icon_passport_p.svg" alt="海外調査" class="survey_list_item_img" />
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="center mt-50">
+          <a href="#" class="survey_list_btn">
+            調査項目一覧
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お客様の声 -->
+  <section>
+    <div class="section_inner">
+      <img src="images/title_deco.png" alt="装飾" class="voices_title_deco">
+      <h2 class="text-6xl center">
+        お客様の声
+      </h2>
+   
+      <div class="box_list mt-50">
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              彼氏・彼女の素行調査の依頼事例│東京都 男性
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              彼氏・彼女の素行調査の依頼事例│東京都 男性
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              彼氏・彼女の素行調査の依頼事例│東京都 男性
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              彼氏・彼女の素行調査の依頼事例│東京都 男性
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              彼氏・彼女の素行調査の依頼事例│東京都 男性
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              彼氏・彼女の素行調査の依頼事例│東京都 男性
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="center mt-50">
+        <a href="#" class="primary_btn main_green_grade color-white">
+          体験談一覧
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- はじめてご利用になるお客様へ -->
+  <section class="main_orange_grade second_offer">
+    <div class="section_inner">
+      <h2 class="text-6xl center color-white font_weight-500">
+        <img src="images/icons/icon_beginner_w.svg" alt="初心者マーク" class="section_icon">
+        はじめてご利用になるお客様へ
+      </h2>
+    
+      <div class="second_offer_content text-2xl font_weight-700">
+        日本探偵調査センターでは、24時間いつでもご相談をお受けしています。<br>
+        カウンセラーがどんなことでも
+        <span class="color-main_orange font_weight-700">「分かりやすく・丁寧に」</span>
+        説明させていただきます。
+      </div>
+      <img src="images/operators_01.png" alt="カウンセラー" class="second_offer_img">
+    </div>
+  </section>
+
+  <!-- ご相談から解決までの流れ -->
+  <section class="main_orange_grade-25">
+    <div class="section_inner">
+      <h2 class="text-6xl center">
+        <img src="images/icons/icon_medal_01_r.svg" alt="メダル" class="section_icon">
+        ご相談から解決までの流れ
+      </h2>
+      <p class="center text-base">
+        <span class="marker-pink">初めての方でも安心の８ステップ</span>
+      </p>
+      <ul class="mt-50">
+        <li class="step_item">
+          <div class="step_item_content">
+            <header class="step_item_header">
+              <div class="step_item_sign main_green_grade">STEP1</div>
+              <div class="color-main_purple text-lg font_weight-500">電話・メールでの無料相談</div>
+            </header>
+            <div class="color-string_gray text-sm">
+              悩みごとや困りごとの相談は24時間・365日いつでも受け付けております。
+              電話・相談フォームをご利用ください。面談予約も受け付けております。
+              女性カウンセラーも在籍しておりますので遠慮なくお申し付けください
+            </div>
+            <div class="step_item_offer">
+              <div class="step_item_offer_btn main_orange_grade">
+                <img src="images/icons/free_dial_w.png" alt="フリーダイヤル" class="step_item_offer_btn_icon"/>
+                <p class="font_weight-500">0120-334-994</p>
+              </div>
+              <a href="#" class="step_item_offer_btn main_orange_grade">
+                <img src="images/icons/mail_icon.png" alt="メール" class="step_item_offer_btn_icon"/>
+                <p class="font_weight-500">メール無料相談</p>
+              </a>
+            </div>
+          </div>
+          <img src="images/step_01.jpg" alt="step1"  class="step_item_img" />
+        </li>
+
+        <li class="step_item">
+          <div class="step_item_content">
+            <header class="step_item_header">
+              <div class="step_item_sign main_green_grade">STEP2</div>
+              <div class="color-main_purple text-lg font_weight-500">面談・お見積もり</div>
+            </header>
+            <div class="color-string_gray text-sm">
+              専任のカウンセラーが実際にお会いして、ご相談やお悩み事をお聞きします。
+              証拠の取得方法や何時間の調査で証拠が取れそうかなど、具体的な調査手法やノウハウを惜しみなく解説して、お客様に合った調査プランと料金を分かりやすく丁寧に説明します。
+              秘密厳守を徹底しておりますのでご安心ください。※相談費用・見積費用はかかりません。
+            </div>
+          </div>
+          <img src="images/step_02.jpg" alt="step2"  class="step_item_img" />
+        </li>
+
+        <li class="step_item">
+          <div class="step_item_content">
+            <header class="step_item_header">
+              <div class="step_item_sign main_green_grade">STEP3</div>
+              <div class="color-main_purple text-lg font_weight-500">ご契約・依頼申し込み</div>
+            </header>
+            <div class="color-string_gray text-sm">
+              依頼申し込みの際には、事前に依頼内容や調査期間、費用の内訳などを詳しく説明いたします。
+              ご提示した費用以外に追加料金が発生することは一切ございません。ご要望に沿った最適な調査プランを実施するために、
+              すみやかに調査部と情報を共有して、予備調査・調査企画の準備に取り掛かります。ご不明な点がございましたら、遠慮なくお申し付けください。
+            </div>
+          </div>
+          <img src="images/step_03.jpg" alt="step3"  class="step_item_img" />
+        </li>
+
+        <li class="step_item">
+          <div class="step_item_content">
+            <header class="step_item_header">
+              <div class="step_item_sign main_green_grade">STEP4</div>
+              <div class="color-main_purple text-lg font_weight-500">予備調査・調査企画</div>
+            </header>
+            <div class="color-string_gray text-sm">
+              お客様から提供された情報をもとに、現場の下見などを行い、現場の状況や対象となる人物の周辺情報を収集します。
+              予備調査が完了したのち、経験豊富な調査チームが調査内容や調査工程の策定を行い、効率よく本調査を進めるための準備を行います。
+            </div>
+          </div>
+          <img src="images/step_04.jpg" alt="step4"  class="step_item_img" />
+        </li>
+
+        <li class="step_item">
+          <div class="step_item_content">
+            <header class="step_item_header">
+              <div class="step_item_sign main_green_grade">STEP5</div>
+              <div class="color-main_purple text-lg font_weight-500">本調査（証拠収集）</div>
+            </header>
+            <div class="color-string_gray text-sm">
+              契約内容に基づいた入念な本調査を実施いたします。経験と実力を兼ね備えた調査チームが証拠を押さえます。
+              調査は露呈することを避けるため、原則秘密裏に行われます。場合によっては、ご依頼人様にも一部の調査に協力していただくこともあります。
+            </div>
+          </div>
+          <img src="images/step_05.jpg" alt="step5"  class="step_item_img" />
+        </li>
+
+        <li class="step_item">
+          <div class="step_item_content">
+            <header class="step_item_header">
+              <div class="step_item_sign main_green_grade">STEP6</div>
+              <div class="color-main_purple text-lg font_weight-500">アフターサポート</div>
+            </header>
+            <div class="color-string_gray text-sm">
+              調査によって証拠が取得できましたら、お客様のご要望に沿った各種サポート業務を行います。
+              相手側との話し合い（協議・交渉サポート）や内容証明等の書面作成代行、弁護士を利用した法的措置など幅広いサポート業務に対応しております。
+            </div>
+          </div>
+          <img src="images/step_06.jpg" alt="step6"  class="step_item_img" />
+        </li>
+
+        <li class="step_item">
+          <div class="step_item_content">
+            <header class="step_item_header">
+              <div class="step_item_sign main_green_grade">STEP6</div>
+              <div class="color-main_purple text-lg font_weight-500">弁護士・専門家の紹介</div>
+            </header>
+            <div class="color-string_gray text-sm">
+              離婚や裁判、慰謝料請求、親権争いなどで法的な対応を必要とされるお客様には、弁護士や専門家を活用した円滑で確実な解決手段のご提案を行います。
+              浮気・各種トラブルに強い弁護士の紹介も可能です。弁護士や専門家がお客様様に代わり対処していくことで円滑に問題解決をサポートします。
+            </div>
+          </div>
+          <img src="images/step_05.jpg" alt="step5"  class="step_item_img" />
+        </li>
+
+        <li class="step_item">
+          <div class="step_item_content">
+            <header class="step_item_header">
+              <div class="step_item_sign main_green_grade">STEP7</div>
+              <div class="color-main_purple text-lg font_weight-500">弁護士・専門家の紹介</div>
+            </header>
+            <div class="color-string_gray text-sm">
+              離婚や裁判、慰謝料請求、親権争いなどで法的な対応を必要とされるお客様には、弁護士や専門家を活用した円滑で確実な解決手段のご提案を行います。
+              浮気・各種トラブルに強い弁護士の紹介も可能です。弁護士や専門家がお客様様に代わり対処していくことで円滑に問題解決をサポートします。
+            </div>
+          </div>
+          <img src="images/step_07.jpg" alt="step7"  class="step_item_img" />
+        </li>
+
+        <li class="step_item">
+          <div class="step_item_content">
+            <header class="step_item_header">
+              <div class="step_item_sign main_green_grade">STEP8</div>
+              <div class="color-main_purple text-lg font_weight-500">アフターケア</div>
+            </header>
+            <div class="color-string_gray text-sm">
+              大切なことは、調査で得た証拠（情報）を活用して、お客様が望む未来に進んでいただくことです。
+              調査が完了してからも、お悩み事や不安がある場合は引き続き専任カウンセラーがしっかり対応いたします。
+              安心した生活を送っていただくよう一緒に考えアドバイスいたします。
+            </div>
+          </div>
+          <img src="images/step_08.jpg" alt="step8"  class="step_item_img" />
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 探偵ニュース -->
+  <section>
+    <div class="section_inner">
+      <img src="images/title_deco_02.png" alt="装飾" class="voices_title_deco">
+      <h2 class="text-6xl center">
+        探偵ニュース
+      </h2>
+   
+      <div class="box_list mt-50">
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="box_list_item">
+          <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+          <div class="box_list_item_content">
+            <p class="text-xs">2023-1-23</p>
+            <p class="text-sm">
+              キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+            </p>
+          </div>
+        </a>
+
+      </div>
+      <div class="center mt-50">
+        <a href="#" class="primary_btn main_green_grade color-white">
+          探偵ニュース一覧
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 探偵の基礎知識 -->
+  <section class="main_green_grade-20">
+    <div class="section_inner">
+      <div class="center">
+        <h2 class="text-6xl section_border">探偵の基礎知識</h2>
+        <p class="center text-base color-main_purple ">探偵利用ガイド</p>
+      </div>
+      <div class="guide">
+        <a href="#" class="guide_item">
+          <div class="guide_item_sign main_green_grade">01</div>
+          <p class="guide_item_title color-main_purple">探偵業に関する法律とは</p>
+          <img src="images/icons/icon_law_p.svg" alt="icon_law" class="guide_item_img">
+        </a>
+
+        <a href="#" class="guide_item">
+          <div class="guide_item_sign main_green_grade">02</div>
+          <p class="guide_item_title color-main_purple">調査結果報告書とは</p>
+          <img src="images/icons/icon_document_p.svg" alt="icon_document" class="guide_item_img">
+        </a>
+
+        <a href="#" class="guide_item">
+          <div class="guide_item_sign main_green_grade">03</div>
+          <p class="guide_item_title color-main_purple">調査依頼時の注意点</p>
+          <img src="images/icons/icon_attention_p.svg" alt="icon_attention" class="guide_item_img">
+        </a>
+
+        <a href="#" class="guide_item">
+          <div class="guide_item_sign main_green_grade">04</div>
+          <p class="guide_item_title color-main_purple">安心できる探偵社の選び方</p>
+          <img src="images/icons/icon_check_p.svg" alt="icon_check" class="guide_item_img">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- last offer -->
+  <section class="main_orange_grade-25">
+    <div class="last_offer">
+      <img src="images/counselor.png" alt="カウンセラー" class="last_offer_img">
+      <div class="last_offer_content">
+        <header class="last_offer_message_main font_weight-700">一人で悩まず、いつでもご相談ください。</header>
+        <div class="last_offer_message_sub font_weight-500 mt-20">
+          ご相談や悩み事、誰にも言えない不安など、経験豊富なカウンセラーが真摯に対応させて頂きます。<br>
+          どんな些細なことでも、一人で悩みを抱えずにご相談ください。
+        </div>
+      </div>
+      <div class="main_orange_grade last_offer_dial">
+        <p class="last_offer_dial_caption">24時間受付 無料相談ダイアル</p>
+        <div class="last_offer_dial_content">
+          <img src="images/icons/free_dial_w.png" alt="フリーダイヤル" class="last_offer_dial_icon"/>
+          <p class="last_offer_dial_number">0120-334-994</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ご相談・お問い合わせ -->
+  <section id="contact">
+    <div class="section_inner">
+      <div class="center">
+        <h2 class="text-6xl section_border">ご相談・お問い合わせ</h2>
+      </div>
+      <div class="contact_note main_green_grade-20 text-sm color-string_gray">
+        <p>※ご相談・お見積もりは何度でも無料です。</p>
+        <p>※相談内容・プライバシーをお守りします。</p>
+        <p>※送信後48時間以内に返答がない場合はお電話でお問い合わせください。</p>
+        <p class="color-common_red">※お急ぎの方は無料相談ダイヤル（0120-334-994）をご利用ください。</p>
+      </div>
+    </div>
+    <form class="form">
+      <ul>
+        <li class="form_item">
+          <div class="form_item_inner">
+            <p class="form_title required">お問い合わせ項目</p>
+            <ul class="form_radio">
+              <li class="form_radio_item">
+                <input type="radio" id="consultation" name="kind" value="相談"
+                        checked>
+                <label for="consultation">相談</label>
+              </li>
+          
+              <li class="form_radio_item">
+                <input type="radio" id="estimate" name="kind" value="見積り">
+                <label for="estimate">見積り</label>
+              </li>
+          
+              <li class="form_radio_item">
+                <input type="radio" id="interview" name="kind" value="面談希望">
+                <label for="interview">面談希望</label>
+              </li>
+  
+              <li class="form_radio_item">
+                <input type="radio" id="expert" name="kind" value="専門家紹介">
+                <label for="expert">専門家紹介</label>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="form_item">
+          <div class="form_item_inner">
+            <label for="name" class="form_title required">お名前
+              <span class="text-xs">※匿名可能・ニックネームでも構いません</span>
+            </label>
+            <input type="text" id="name" name="name" placeholder="日本太郎" class="w-100"  required>
+          </div>
+        </li>
+
+        <li class="form_item">
+          <div class="form_item_inner">
+            <label for="region" class="form_title required">
+                お住まいの地域
+            </label>
+            <select name="region" id="region">
+              <option value="">--選択してください--</option>
+              <option value="北海道">北海道</option>
+              <option value="青森県">青森県</option>
+              <option value="岩手県">岩手県</option>
+              <option value="宮城県">宮城県</option>
+              <option value="秋田県">秋田県</option>
+              <option value="山形県">山形県</option>
+              <option value="福島県">福島県</option>
+              <option value="茨城県">茨城県</option>
+              <option value="栃木県">栃木県</option>
+              <option value="群馬県">群馬県</option>
+              <option value="埼玉県">埼玉県</option>
+              <option value="千葉県">千葉県</option>
+              <option value="東京都">東京都</option>
+              <option value="神奈川県">神奈川県</option>
+              <option value="新潟県">新潟県</option>
+              <option value="富山県">富山県</option>
+              <option value="石川県">石川県</option>
+              <option value="福井県">福井県</option>
+              <option value="山梨県">山梨県</option>
+              <option value="長野県">長野県</option>
+              <option value="岐阜県">岐阜県</option>
+              <option value="静岡県">静岡県</option>
+              <option value="愛知県">愛知県</option>
+              <option value="三重県">三重県</option>
+              <option value="滋賀県">滋賀県</option>
+              <option value="京都府">京都府</option>
+              <option value="大阪府">大阪府</option>
+              <option value="兵庫県">兵庫県</option>
+              <option value="奈良県">奈良県</option>
+              <option value="和歌山県">和歌山県</option>
+              <option value="鳥取県">鳥取県</option>
+              <option value="島根県">島根県</option>
+              <option value="岡山県">岡山県</option>
+              <option value="広島県">広島県</option>
+              <option value="山口県">山口県</option>
+              <option value="徳島県">徳島県</option>
+              <option value="香川県">香川県</option>
+              <option value="愛媛県">愛媛県</option>
+              <option value="高知県">高知県</option>
+              <option value="福岡県">福岡県</option>
+              <option value="佐賀県">佐賀県</option>
+              <option value="長崎県">長崎県</option>
+              <option value="熊本県">熊本県</option>
+              <option value="大分県">大分県</option>
+              <option value="宮崎県">宮崎県</option>
+              <option value="鹿児島県">鹿児島県</option>
+              <option value="沖縄県">沖縄県</option>
+</select>
+          </select>
+          </div>
+        </li>
+
+        <li class="form_item">
+          <div class="form_item_inner">
+            <label for="email" class="form_title required">Eメールアドレス</label>
+            <input type="email" id="email" name="email" placeholder="user@example.com" class="w-100" required>
+          </div>
+        </li>
+
+        <li class="form_item">
+          <div class="form_item_inner">
+            <label for="phone" class="form_title required">電話番号</label>
+            <input type="text" id="phone" name="phone" placeholder="09012345678" class="w-50" required>
+          </div>
+        </li>
+
+        <li class="form_item">
+          <div class="form_item_inner">
+            <label for="age" class="form_title option">年齢</label>
+            <input type="text" id="age" name="age" placeholder="45" class="w-50" required>
+          </div>
+        </li>
+
+        <li class="form_item">
+          <div class="form_item_inner">
+            <p class="form_title option">性別</p>
+            <ul class="form_radio">
+              <li class="form_radio_item">
+                <input type="radio" id="male" name="sex" value="male"
+                      checked>
+                <label for="male">男性</label>
+              </li>
+          
+              <li class="form_radio_item">
+                <input type="radio" id="female" name="sex" value="female">
+                <label for="female">女性</label>
+              </li>
+            </ul>
+          </div> 
+        </li>
+
+        <li class="form_item">
+          <div class="form_item_inner">
+            <label for="content" class="form_title required">ご相談内容
+              <span class="text-xs">※お調べになりたい内容、お悩みごとなど</span>
+            </label>
+            <textarea id="content" name="content" rows="5" class="w-100">
+            </textarea>
+          </div>
+        </li>
+
+        <li class="form_item">
+          <div class="form_item_inner">
+            <label for="information" class="form_title required">現時点の情報
+              <span class="text-xs">※お持ちの情報や心当たりなど分かる範囲で</span>
+            </label>
+            <textarea id="information" name="information" rows="5" class="w-100">
+            </textarea>
+          </div>
+        </li>
+
+        <li class="form_item">
+          <div class="form_item_inner">
+            <label for="purpose" class="form_title required">目的・要望・質問
+              <span class="text-xs">※ご要望やご質問があればお聞かせください</span>
+            </label>
+            <textarea id="purpose" name="purpose" rows="5" class="w-100">
+            </textarea>
+          </div>
+        </li>
+
+        <li class="form_item">
+          <div class="form_item_inner">
+            <label for="age" class="form_title option">希望予算</label>
+            <input type="text" id="age" name="age" class="w-50">
+            円くらい
+          </div>
+        </li>
+
+        <li class="form_item">
+          <div class="form_item_inner">
+            <div class="form_title option">面談希望日時</div>
+            <ul>
+              <li>
+                <label for="first" class="">第一希望</label>
+                <input type="date" id="first" name="first" class="w-50">
+              </li>
+              <li>
+                <label for="second" class="">第二希望</label>
+                <input type="date" id="second" name="second" class="w-50">
+              </li>
+              <li>
+                <label for="third" class="">第三希望</label>
+                <input type="date" id="third" name="third" class="w-50">
+              </li>
+            </ul>
+          </div>
+        </li>
+        <div class="section_inner">
+          <p class="center text-lg font_weight-500">プライバシーポリシー</p>
+          <div class="form_privacy">
+            株式会社プライベートアイ（以下、当社）は、個人情報保護に関する法令およびその他の規範を遵守するとともに、以下のプライバシーポリシーを制定し個人情報保護を徹底いたします。
+            <div class="form_privacy_item">
+              <p class="form_privacy_title">１.適切な個人情報の収集および利用・提供の基準</p>
+              <p>
+                当社は、調査事業において、必要な範囲で個人情報を収集し、当社からの連絡や業務の案内やご質問に対する回答として、電子メールや資料の送付等に利用することがあります。
+                収集した個人情報は「個人情報保護に関する法律」等を遵守し、厳正な管理を行います。
+              </p>
+            </div>
+
+            <div class="form_privacy_item">
+              <p class="form_privacy_title">２.個人情報の安全管理・保護について</p>
+              <p>
+                当社は、個人情報への不正アクセス、個人情報の紛失、破壊、改ざん及び漏えいを防ぐため、必要かつ適切な安全管理対策を講じ、厳正な管理下で安全に取り扱います。
+              </p>
+            </div>
+
+            <div class="form_privacy_item">
+              <p class="form_privacy_title">３.個人情報の第三者への提供について</p>
+              <p>
+                原則として当社は収集した個人情報は厳重に管理し、ご本人の事前の了承なく第三者に開示することはありません。<br>
+                ただし、ご本人の事前の了承を得たうえでご本人が希望されるサービスを行なうために当社業務を委託する業者に対して開示する場合や
+                裁判所、検察庁、警察、 弁護士会、消費者センターまたはこれらに準じた権限を有する機関から、
+                個人情報の開示を求められた場合、当社はこれに応じて情報を開示することがあります。及び当社の権利や財産を保護する目的で開示することがあります。
+              </p>
+            </div>
+            
+            <div class="form_privacy_item">
+              <p class="form_privacy_title">４.個人情報はいつでも変更・訂正または削除できます</p>
+              <p>
+                当社は、ご本人からお申し出があったときは、ご本人様確認後登録情報の開示を行います。
+                また、お申し出があったときはご本人様確認後登録情報の追加・変更・訂正または削除を行います。 ただし、登録を削除すると提供できないサービスが発生する場合があります。
+              </p>
+            </div>
+            
+            <div class="form_privacy_item">
+              <p class="form_privacy_title">5.法令・規範の遵守と本ポリシーの継続的な改善について</p>
+              <p>
+                当社は、個人情報保護に関する法律・法令、その他の規範を遵守するとともに、本ポリシーの内容を適宜見直し、継続的な改善に努めます。
+              </p>
+            </div>
+            
+            <div class="form_privacy_item">
+              <p class="form_privacy_title">6.お問い合わせ</p>
+              <p>当社における個人情報保護に関してご質問などがある場合は、
+                こちら<span class="color-main_orange"></span>（info@tantei-tpe.com）</span>からお問い合わせください。
+              </p>
+            </div>
+          </div>
+          <div class="center mt-20">
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">プライバシーポリシーに同意する</label>
+          </div>
+          <div class="center mt-50">
+            <input type="submit" value="入力内容確認へ" class="form_submit main_green_grade">
+          </div>
+        </div>
+      </ul>
+    </form>
+  </section>
+  
+  <!-- 日本探偵調査センターは全国に対応しております。 -->
+  <section class="support main_green_grade-20">
+    <div class="section_inner support_inner">
+      <h2 class="test-3xl center">日本探偵調査センターは全国に対応しております。</h2>
+      <img src="images/japan_map.png" alt="日本地図" class="support_map_img">
+      <ul class="support_list">
+        <li class="support_list_item item-1">
+          <header class="support_list_item_name">北海道・東北地方</header>
+          <div class="support_list_item_content">北海道  / 青森 / 岩手 / 秋田 / 宮城/福島 /山形</div>
+        </li>
+        <li class="support_list_item item-2">
+          <header class="support_list_item_name">北陸・甲信越地方</header>
+          <div class="support_list_item_content">新潟 / 長野  / 山梨 / 富山 / 石川 /  福井</div>
+        </li>
+        <li class="support_list_item item-3">
+          <header class="support_list_item_name">関東地方</header>
+          <div class="support_list_item_content">東京 / 千葉 / 埼玉 / 神奈川 / 群馬 / 栃木 / 茨城</div>
+        </li>
+        <li class="support_list_item item-4">
+          <header class="support_list_item_name">東海地方</header>
+          <div class="support_list_item_content">静岡 / 愛知 / 岐阜 / 三重</div>
+        </li>
+        <li class="support_list_item item-5">
+          <header class="support_list_item_name">関西地方</header>
+          <div class="support_list_item_content">大阪 / 京都 / 奈良 / 滋賀 / 兵庫 / 和歌山</div>
+        </li>
+        <li class="support_list_item item-6">
+          <header class="support_list_item_name">中国地方</header>
+          <div class="support_list_item_content">鳥取 / 島根 / 岡山 / 広島 / 山口</div>
+        </li>
+        <li class="support_list_item item-7">
+          <header class="support_list_item_name">四国地方</header>
+          <div class="support_list_item_content">香川 / 愛媛 / 徳島 / 高知</div>
+        </li>
+        <li class="support_list_item item-8">
+          <header class="support_list_item_name">九州・沖縄地方</header>
+          <div class="support_list_item_content">福岡 / 長崎 / 佐賀 / 大分 / 熊本 / 宮崎 / 鹿児島 / 沖縄</div>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <footer class="main_green_grade">
+    <div class="section_inner">
+      <div class="footer_logo_area">
+        <img src="images/JDI_logo.png" alt="JDI_logo" class="footer_logo"/>
+        <div>
+          <div class="text-xs">
+            Japan Detective Investigation Agency
+          </div>
+          <div>
+            <span class="text-xl font_weight-500">日本探偵調査センター</span>
+          </div>
+        </div>
+      </div>
+      <section class="footer_list mt-20">
+        <header class="footer_list_title">◆総合案内</header>
+        <ul class="footer_list_inner main">
+          <li class="footer_item">私たちの特徴</li>
+          <li class="footer_item">調査項目</li>
+          <li class="footer_item">調査料金</li>
+          <li class="footer_item">依頼の流れ</li>
+          <li class="footer_item">お客様の声</li>
+          <li class="footer_item">会社案内</li>
+        </ul>
+      </section>
+      <section class="footer_list sub_wrapper mt-35">
+        <div class="footer_list sub_item">
+          <header class="footer_list_title">◆ガイド</header>
+          <ul class="footer_list_inner sub">
+            <li class="footer_item">・安心できる探偵社の選び方</li>
+            <li class="footer_item">・調査依頼時の注意点</li>
+            <li class="footer_item">・調査結果報告書とは</li>
+            <li class="footer_item">・探偵業に関する法律とは</li>
+          </ul>
+        </div>
+
+        <div class="footer_list sub_item">
+          <header class="footer_list_title">◆募集要項</header>
+          <ul class="footer_list_inner sub">
+            <li class="footer_item">調査員求人募集</li>
+            <li class="footer_item">相談員求人募集</li>
+            <li class="footer_item">探偵代理店募集</li>
+            <li class="footer_item">探偵業務委託、調査委託（アウトソーシング）</li>
+          </ul>
+        </div>
+       
+        <div class="footer_list sub_item">
+          <header class="footer_list_title">◆ヘルプ</header>
+          <ul class="footer_list_inner sub">
+            <li class="footer_item">プライバシーポリシー</li>
+            <li class="footer_item">特定商取引法に基づく表記</li>
+            <li class="footer_item">よくある質問（Q＆A）</li>
+            <li class="footer_item">サイトマップ</li>
+          </ul>
+        </div>
+       
+        <div class="footer_list sub_item">
+          <header class="footer_list_title">◆言語</header>
+          <ul class="footer_list_inner sub">
+            <li class="footer_item">・ENGLISH（英語）</li>
+            <li class="footer_item">・中文（中国語）</li>
+          </ul>
+        </div>
+      </section>
+      <p class="center text-xs color-white mt-50">Copyright © 2022 日本探偵調査センター All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 下部fixedバナー(PC用) -->
+  <div class="fixed_bannar fixed_bannar_pc md_above_only">
+    <div class="fixed_bannar_pc_inner">
+      <img src="images/fixed_img.jpg" alt="オペレータ" class="fixed_bannar_pc_img">
+      <div class="fixed_bannar_pc_message">
+        <p class="text-xs center font_weight-500">はじめての調査依頼は日本探偵調査センターへご相談ください。</p>
+        <p class="fixed_bannar_pc_message_caption">無料相談ダイヤル｜24時間・365日受付</p>
+      </div>
+
+      <div class="fixed_bannar_pc_dial free_dial">
+        <img src="images/icons/free_dial_red.png" alt="フリーダイヤル" class="free_dial_icon" />
+        <span class="fixed_bannar_pc_dial_number color-main_orange font_weight-700 free_dial_number">0120-334-994</span>
+      </div>
+      <div class="fixed_bannar_pc_mail">
+        <p class="text-sm center font_weight-500">＼ 今すぐ相談 ／</p>
+        <a href="#contact" class="offer_item main_orange_grade">
+          <img src="images/icons/mail_icon.png" alt="メール ロゴ" class="offer_icon" />
+          <p class="text-sm font_weight-500">メールで相談</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 下部fixedバナー(SP用) -->
+  <div class="fixed_bannar fixed_bannar_sp md_only">
+    <div class="fixed_bannar_sp_offer">
+      <div class="offer_list_item">
+        <p class="text-sm center font_weight-500">＼ 24時間365日相談無料 ／</p>
+        <div class="offer_item">
+          <img src="images/icons/free_dial_w.png" alt="フリーダイヤル" class="fixed_bannar_sp_icon offer_icon" />
+          <span class="font_weight-700 free_dial_number ">0120-334-994</span>
+        </div>
+      </div>
+      <div class="offer_list_item">
+        <p class="text-sm center font_weight-500">＼ 今すぐ相談 ／</p>
+        <a href="#contact" class="offer_item">
+          <img src="images/icons/mail_icon.png" alt="メール ロゴ" class="fixed_bannar_sp_icon offer_icon" />
+          <p class="font_weight-500">メールで相談する</p>
+        </a>
+      </div>
+    </div>
+    <div class="fixed_bannar_sp_info">
+      はじめての調査依頼は日本探偵調査センターへご相談ください。
+    </div>
+  </div>
+
+  <div id="js-to_top" class="to_top main_green_grade">
+    <p class="arrow">^</p>
+    <p class="top">TOP</p>
+  </div>
+
+  <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
+</body>
+</html>
