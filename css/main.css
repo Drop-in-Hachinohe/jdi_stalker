@@ -2495,13 +2495,13 @@
 }
 .first_offer_message {
   width: 100%;
-  padding: 20px;
+  padding: 35px 20px;
 }
 @media (min-width: 768px) {
   .first_offer_message {
     width: 70%;
     padding-bottom: 0;
-    padding-left: 10vw;
+    padding: 70px 10px 70px 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2509,7 +2509,7 @@
 }
 @media (min-width: 1024px) {
   .first_offer_message {
-    width: 60%;
+    padding: 70px 10px 70px 10vw;
   }
 }
 .first_offer_message_main {

@@ -1022,17 +1022,17 @@ $commonRed: #df3c23;
   }
   &_message {
     width: 100%;
-    padding: 20px;
+    padding: 35px 20px;
     @media (min-width: 768px) {
       width: 70%;
       padding-bottom: 0;
-      padding-left: 10vw;
+      padding: 70px 10px 70px 5vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
     @media (min-width: 1024px) {
-      width: 60%;
+      padding: 70px 10px 70px 10vw;
     }
     &_main {
       @include text-2xl;
