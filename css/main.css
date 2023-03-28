@@ -2493,19 +2493,45 @@
     width: 70%;
     padding-bottom: 0;
     padding-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
-.first_offer_message_bold {
-  font-size: 1.2rem;
+.first_offer_message_main {
+  font-size: 1.3125rem; /* 21px */
+}
+@media (min-width: 640px) {
+  .first_offer_message_main {
+    font-size: 1.375rem; /* 22px */
+  }
 }
 @media (min-width: 768px) {
-  .first_offer_message_bold {
-    font-size: 1.3rem;
+  .first_offer_message_main {
+    font-size: 1.4375rem; /* 23px */
+  }
+}
+@media (min-width: 768px) and (min-width: 640px) {
+  .first_offer_message_main {
+    font-size: 1.5rem; /* 24px */
   }
 }
 @media (min-width: 1024px) {
-  .first_offer_message_bold {
-    font-size: 1.7rem;
+  .first_offer_message_main {
+    font-size: 1.5625rem; /* 25px */
+  }
+}
+@media (min-width: 1024px) and (min-width: 640px) {
+  .first_offer_message_main {
+    font-size: 1.625rem; /* 26px */
+  }
+}
+.first_offer_message_sub {
+  padding-top: 35px;
+}
+@media (min-width: 768px) {
+  .first_offer_message_sub {
+    padding-top: 30px;
   }
 }
 .first_offer_img {
