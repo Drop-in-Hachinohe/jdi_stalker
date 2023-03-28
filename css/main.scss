@@ -21,11 +21,6 @@ $commonRed: #df3c23;
   background: rgb(29,179,200);
   background: linear-gradient(171deg, rgba(29,179,200,0.8) 0%, rgba(29,179,171,1) 100%);
 }
-
-// .main_green_grade-70 {
-//   background: rgb(78,103,151);
-//   background: linear-gradient(45deg, rgba(78,103,151,1) 0%, rgba(128,130,184,1) 100%);
-// }
 .main_green_grade-20 {
   background: rgb(29,179,171);
   background: linear-gradient(90deg, rgba(29,179,171,0.1) 0%, rgba(29,179,171,0.2) 100%);
@@ -36,10 +31,10 @@ $commonRed: #df3c23;
   background: linear-gradient(171deg, rgba(222,82,13,0.7) 0%, rgba(222,82,13,1) 100%);
 }
 
-// .main_orange_grade-25 {
-//   background: rgb(234,178,132);
-//   background: linear-gradient(45deg, rgba(234,178,132,0.25) 0%, rgba(234,147,132,0.25) 100%);
-// }
+.main_orange_grade-20 {
+  background: rgb(234,178,132);
+  background: linear-gradient(45deg, rgba(234,178,132,0.25) 0%, rgba(234,147,132,0.25) 100%);
+}
 .bg-line {
   background-color: $line;
 }
@@ -250,9 +245,10 @@ $commonRed: #df3c23;
     box-shadow: 0px 0px 8px 0 rgba(0,0,0,.5);
   }
 }
-@mixin btn_hover_opacity {
+@mixin btn_hover_motion {
+  transition-duration: .2s;
   &:hover {
-    opacity: .8;
+    transform: translateY(3px);
   }
 }
 
@@ -517,7 +513,7 @@ $commonRed: #df3c23;
     color: white;
     justify-content: center;
     margin-right: 5px;
-    @include btn_hover_opacity;
+    @include btn_hover_motion;
     @media (min-width: 768px) {
       margin-right: 0;
     }
@@ -539,7 +535,7 @@ $commonRed: #df3c23;
 .primary_btn {
   @include btn;
   @include text-xl;
-  @include btn_hover_opacity;
+  @include btn_hover_motion;
   padding: 5px 50px;
 }
 
@@ -563,6 +559,10 @@ $commonRed: #df3c23;
   }
   @media (min-width: 1024px) {
     min-height: 550px;
+    background-position: top -10vw center;
+  }
+  @media (min-width: 1236px) {
+    background-position: top -15vw center;
   }
   &_message {
     &_main {
@@ -611,15 +611,20 @@ $commonRed: #df3c23;
   width: 100%;
   height: 90px;
   position: fixed;
-  top: 0;
   box-shadow: 0px 2px 10px 0 rgba(0,0,0,.2);
   z-index: 101;
   height: 50px;
   background-color: white;
+  top: 0;
   @media (min-width: 768px) {
     height: 140px;
     &.hidden {
       height: 50px;
+    }
+  }
+  &_inner {
+    @media (min-width: 640px) {
+      @include sectionX_padding;
     }
   }
   &_main {
@@ -631,15 +636,17 @@ $commonRed: #df3c23;
       height: 90px;
     }
     &_logo {
-      width: 50px;
-      padding: 2%;
+      height: 50px;
       @media (min-width: 768px) {
-        width: 80px;
+        height: 78px;
       }
-    }
-    &_logo_area {
-      display: flex;
-      align-items: center;
+      @media (min-width: 1024px) {
+        height: 90px;
+      }
+      &_area {
+        display: flex;
+        align-items: center;
+      }
     }
   }
   &_offer {
@@ -663,7 +670,12 @@ $commonRed: #df3c23;
         display: block;
       }
       &_item {
-        @include btn_hover_opacity;
+        @media (max-width: 767px) {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+        }
+        @include btn_hover_motion;
         @media (min-width: 768px) {
           margin-right: 0;
         }
@@ -675,24 +687,68 @@ $commonRed: #df3c23;
       }
     }
   }
-  &_menu_btn {
-    border: solid 1px $mainGreen;
-    border-radius: 5px;
+  // スマホのメニューボタンを「メニュー」表記にする場合のclass
+  // &_menu_btn {
+  //   border: solid 1px $mainGreen;
+  //   border-radius: 5px;
+  //   position: relative;
+  //   width: 50px;
+  //   height: 45px;
+  //   &:after {
+  //     content: "メニュー";
+  //     font-size: 12px;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 100%;
+  //   }
+  //   &.opened {
+  //     &:after {
+  //       content: "閉じる";
+  //     }
+  //   }
+  // }
+  &_hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 80px;
+    box-sizing: content-box;
+    padding: 0;
+    width: 45px;
     height: 45px;
-    &:after {
-      content: "メニュー";
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    span {
       position: absolute;
-      width: 100%;
-      height: 100%;
+      background: $mainGreen;
+      width: 30px;
+      height: 3px;
+      transition: 0.3s ease-out;
+      &:nth-of-type(1) {
+        top: 10px;
+      }
+      &:nth-of-type(2) {
+        top: 22px;
+      }
+      &:nth-of-type(3) {
+        top: 34px;
+      }
     }
     &.opened {
-      &:after {
-        content: "閉じる";
+      span {
+        transition: 0.3s ease-out;
+        &:nth-of-type(1) {
+          transform: translateY(9px) rotate(-45deg);
+          top: 12px;
+        }
+        &:nth-of-type(2) {
+          display: none;
+        }
+        &:nth-of-type(3) {
+          transform: translateY(-9px) rotate(45deg);
+          top: 30px;
+        }
       }
     }
   }
@@ -721,43 +777,52 @@ $commonRed: #df3c23;
 
 .global_nav {
   width: 100%;
-  display: none;
-  position: relative;
-  &.active {
-    display: block;
-  }
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
     height: 50px;
-    &.logo_show {
-      justify-content: flex-end;
-      .global_nav_logo {
-        display: flex;
+  }
+  &_inner {
+    display: none;
+    position: relative;
+    @include sectionX_padding;
+    &.active {
+      display: block;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    justify-content: center;
+    @media (min-width: 768px) {
+      display: flex;
+      &.logo_show {
+        justify-content: space-between;
+        align-items: center;
+        .global_nav_logo {
+          display: flex;
+        }
+        
+      }
+    }
+    @media (max-width: 1024px) {
+      &.logo_show {
+        .nav_menu_item {
+          font-size: 12px;
+        }
       }
     }
   }
   &_logo {
     display: none;
-    position: absolute;
-    left: 2.5px;
-    top: 2.5px;
-    background-color: white;
-    align-items: center;
     height: 45px;
     padding: 0 10px;
-    &_caption {
-      font-size: 10px;
-    }
-    &_img {
-      width: 30px;
-    }
   }
   .nav_menu {
     max-height: calc(100vh - 50px);
     overflow: scroll;
+    width: 100%;
     @media (min-width: 768px) {
       display: flex;
+      justify-content: center;
     }
     &_item {
       &:not(:last-child) {
@@ -828,11 +893,18 @@ $commonRed: #df3c23;
           width: 100vw;
           left: 0;
           top: 140px;
-          padding: 10px;
-          background: rgb(41,57,128);
-          background: linear-gradient(45deg, rgba(41,57,128,1) 0%, rgba(41,57,128,0.8) 100%);
-          flex-wrap: wrap;
-          justify-content: space-between;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          background: rgb(29,179,200);
+          background: linear-gradient(171deg, rgba(29,179,200,0.8) 0%, rgba(29,179,171,1) 100%);
+        }
+        &_inner {
+          @media (min-width: 768px) {
+            @include sectionX_padding;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
         }
         &.header_hidden {
           @media (min-width: 768px) {
@@ -846,10 +918,9 @@ $commonRed: #df3c23;
             @media (max-width: 767px) {
               width: 100%;
             }
-
           }
           &:hover {
-            background-color: #d4d7e8;
+            background-color: #d2f0ee;
           }
           color: $mainGreen;
           padding: 10px 20px;
@@ -924,7 +995,7 @@ $commonRed: #df3c23;
       }
       &_btn {
         @include btn;
-        @include btn_hover_opacity;
+        @include btn_hover_motion;
         padding: 5px 20px;
         &_arrow {
           width: 20px;
@@ -1364,7 +1435,7 @@ $commonRed: #df3c23;
       align-items: center;
       transition-duration: .2s;
       &:hover {
-        background-color: #d4d7e8;
+        background-color: #d2f0ee;
       }
       &.main {
         flex-direction: column;
@@ -1485,7 +1556,7 @@ $commonRed: #df3c23;
         display: inline-flex;
         margin-right: 10px;
         @include text-sm;
-        @include btn_hover_opacity;
+        @include btn_hover_motion;
         align-items: center;
         @media (min-width: 640px) {
           padding: 3px 15px 3px 5px;
@@ -1507,7 +1578,6 @@ $commonRed: #df3c23;
 .guide {
   margin-top: 70px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   &_item {
     width: 48%;
@@ -1515,16 +1585,28 @@ $commonRed: #df3c23;
     box-shadow: 2px 2px 15px 0 rgba(0,0,0,.2);
     transition-duration: .2s;
     &:hover {
-      background-color: #d4d7e8;
+      background-color: #d2f0ee;
       box-shadow: 0px 0px 8px 0 rgba(0,0,0,.5);
     }
     &:not(:nth-child(-n+2)) {
       margin-top: 40px;
     }
-    @media (min-width: 640px) {
+    &:nth-child(odd) {
+      margin-right: 10px;
+    }
+    @media (min-width: 768px) {
       width: 24%;
       &:not(:nth-child(-n+2)) {
         margin-top: 0;
+      }
+      &:not(:nth-child(-n+4)) {
+        margin-top: 40px;
+      }
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+      &:not(:nth-child(4n)) {
+        margin-right: 1vw;
       }
     }
     position: relative;
@@ -1549,6 +1631,7 @@ $commonRed: #df3c23;
     }
     &_title {
       transform: translateY(-40px);
+      @include text-lg;
     }
     &_img {
       width: 50px;
@@ -1643,24 +1726,20 @@ $commonRed: #df3c23;
     padding: 10px 30px;
     @include btn;
     @include text-2xl;
-    @include btn_hover_opacity;
+    @include btn_hover_motion;
   }
 }
 
 .footer {
   &_logo {
-    width: 50px;
-    padding: 2%;
-    @media (min-width: 768px) {
-      width: 80px;
+    width: 100%;
+    padding-bottom: 2%;
+    @media (min-width: 640px) {
+      width: 200px;
     }
-  }
-  &_logo_area {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    width: fit-content;
-    padding-right: 15px;
+    @media (min-width: 768px) {
+      width: 250px;
+    }
   }
   &_list {
     margin-bottom: 30px;

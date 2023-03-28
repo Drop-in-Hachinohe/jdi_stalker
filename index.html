@@ -13,141 +13,141 @@
 </head>
 <body>
   <header id="js-header" class="header">
-    <div id="js-header_main" class="header_main">
-      <a href="#" class="header_main_logo_area">
-        <img src="images/JDI_logo.png" alt="JDI_logo" class="header_main_logo"/>
-        <div>
-          <div class="text-xs sm_above_only">
-            Japan Detective Investigation Agency
+    <div id="js-header_main" class="header_inner">
+      <div class="header_main">
+        <a href="#" class="header_main_logo_area">
+          <img src="images/JDI_logo.jpg" alt="JDI_logo" class="header_main_logo"/>
+        </a>
+        <div class="header_offer">
+          <div class="header_offer_dial md_above_only">
+            <div class="free_dial">
+              <img src="images/icons/free_dial_red.png" alt="フリーダイヤル" class="free_dial_icon" />
+              <span class="text-3xl color-main_red font_weight-700">0120-334-994</span>
+            </div>
+            <div class="header_offer_dial_caption main_orange_grade text-sm">
+              24時間・365日・相談無料
+            </div>
           </div>
-          <div>
-            <span class="text-lg font_weight-500 sm_above_only">ストーカー・嫌がらせ被害対策センター</span><br class="lg_only" />
-          </div>
-        </div>
-      </a>
-      <div class="header_offer">
-        <div class="header_offer_dial md_above_only">
-          <div class="free_dial">
-            <img src="images/icons/free_dial_red.png" alt="フリーダイヤル" class="free_dial_icon" />
-            <span class="text-3xl color-main_orange font_weight-700">0120-334-994</span>
-          </div>
-          <div class="header_offer_dial_caption main_orange_grade text-sm">
-            24時間・365日・相談無料
-          </div>
-        </div>
-        <div class="header_offer_other">
-          <a href="#" class="header_offer_other_item offer_item bg-line line">
-            <img src="images/icons/line_icon.png" alt="LINE ロゴ" class="header_offer_other_icon offer_icon"/>
-            <p class="text-sm font_weight-500  md_above_only">LINE無料相談</p>
-          </a>
-          <a href="#contact" class="header_offer_other_item offer_item main_orange_grade">
-            <img src="images/icons/mail_icon.png" alt="メール ロゴ" class="header_offer_other_icon offer_icon" />
-            <p class="text-sm font_weight-500  md_above_only">メール無料相談</p>
-          </a>
-          <!-- ここから下はmdサイズ未満の時にだけ表示するもの -->
-          <div class="header_offer_other_item offer_item main_orange_grade md_only">
-            <img src="images/icons/free_dial_w.png" alt="フリーダイヤル ロゴ" class="header_offer_other_icon offer_icon" />
-          </div>
-          <div id="js-nav_menu" class="header_menu_btn md_only">
+          <div class="header_offer_other">
+            <a href="#" class="header_offer_other_item offer_item bg-line line">
+              <img src="images/icons/line_icon.png" alt="LINE ロゴ" class="header_offer_other_icon offer_icon"/>
+              <p class="text-sm font_weight-500  md_above_only">LINE無料相談</p>
+            </a>
+            <a href="#contact" class="header_offer_other_item offer_item main_orange_grade">
+              <img src="images/icons/mail_icon.png" alt="メール ロゴ" class="header_offer_other_icon offer_icon" />
+              <p class="text-sm font_weight-500  md_above_only">メール無料相談</p>
+            </a>
+            <!-- ここから下はmdサイズ未満の時にだけ表示するもの -->
+            <div class="header_offer_other_item offer_item main_orange_grade md_only">
+              <img src="images/icons/free_dial_w.png" alt="フリーダイヤル ロゴ" class="header_offer_other_icon offer_icon" />
+            </div>
+            <!-- スマホのメニューボタンを「メニュー」表記にする場合 -->
+            <!-- <div id="js-nav_menu" class="header_menu_btn md_only">
+            </div> -->
+            <div id="js-nav_menu" class="header_hamburger md_only">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
     </div>
    <!-- ここから下段 -->
-    <nav id="js-global_nav" class="global_nav main_green_grade">
-      <a href="#" class="global_nav_logo">
-        <img src="images/JDI_logo.png" alt="JDI_logo" class="global_nav_logo_img"/>
-        <div>
-          <div class="global_nav_logo_caption">
-            Japan Detective Investigation Agency
+    <nav class="global_nav main_green_grade">
+      <div id="js-global_nav" class="global_nav_inner">
+        <a href="#" class="global_nav_logo">
+          <img src="images/JDI_logo.jpg" alt="JDI_logo" class="global_nav_logo_img"/>
+        </a>
+        <div class="nav_menu">
+          <a href="#" class="nav_menu_item">
+            私たちの特徴
+          </a>
+          <div id="js-nav_menu_item_parent" class="nav_menu_item parent">
+            調査項目
+            <div id="js-child_list" class="child_list">
+              <div class="child_list_inner">
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">ストーカー調査対策</p>
+                  <img src="images/icons/icon_stalker_gr.svg" alt="トーカー調査対策" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">嫌がらせ調査対策</p>
+                  <img src="images/icons/icon_swearing_gr.svg" alt="嫌がらせ調査対策" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">盗聴器・盗撮器発見調査</p>
+                  <img src="images/icons/icon_eavesdropping_gr.svg" alt="盗聴器・盗撮器発見調査" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">加害者との協議・交渉サポート</p>
+                  <img src="images/icons/icon_right_gr.svg" alt="加害者との協議・交渉サポート" class="child_list_item_img" />
+                </a href="#">
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">ストーカー証拠収集</p>
+                  <img src="images/icons/icon_stalker_01_gr.svg" alt="ストーカー証拠収集" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">ストーカー特定調査</p>
+                  <img src="images/icons/icon_stalker_02_gr.svg" alt="ストーカー特定調査" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">嫌がらせ証拠収集</p>
+                  <img src="images/icons/icon_swearing_01_gr.svg" alt="嫌がらせ証拠収集" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">嫌がらせ特定調査</p>
+                  <img src="images/icons/icon_swearing_02_gr.svg" alt="嫌がらせ特定調査" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">美人局・ハニートラップ調査</p>
+                  <img src="images/icons/icon_honey_gr.svg" alt="美人局・ハニートラップ調査" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">いじめ・ハラスメント捜索</p>
+                  <img src="images/icons/icon_harassment_gr.svg" alt="いじめ・ハラスメント捜索" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">未定</p>
+                  <img src="images/icons/icon_wave_gr.svg" alt="未定" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">ネットストーカー・SNS調査</p>
+                  <img src="images/icons/icon_internet_gr.svg" alt="ネットストーカー・SNS調査" class="child_list_item_img" />
+                </a>
+
+              </div>
+            </div>
           </div>
-          <div class="text-sm font_weight-500">
-            ストーカー・嫌がらせ被害対策センター
-          </div>
+          <a href="#" class="nav_menu_item">
+            依頼の流れ
+          </a>
+          <a href="#" class="nav_menu_item">
+            お客様の声
+          </a>
+          <a href="#" class="nav_menu_item">
+            会社案内
+          </a>
         </div>
-      </a>
-      <div class="nav_menu">
-        <a href="#" class="nav_menu_item">
-          私たちの特徴
-        </a>
-        <div id="js-nav_menu_item_parent" class="nav_menu_item parent">
-          調査項目
-          <div id="js-child_list" class="child_list">
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">浮気調査</p>
-              <img src="images/icons/icon_cheating_p.svg" alt="浮気調査" class="child_list_item_img" />
-            </a>
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">人探し・行方調査</p>
-              <img src="images/icons/icon_looking_p.svg" alt="行方調査" class="child_list_item_img" />
-            </a>
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">結婚信用調査</p>
-              <img src="images/icons/icon_marriage_p.svg" alt="結婚信用調査" class="child_list_item_img" />
-            </a>
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">ストーカー対策</p>
-              <img src="images/icons/icon_stalker_p.svg" alt="ストーカー対策" class="child_list_item_img" />
-            </a>
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">家出人・失踪者捜索</p>
-              <img src="images/icons/icon_runaway_p.svg" alt="失踪者捜索" class="child_list_item_img" />
-            </a>
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">行動調査</p>
-              <img src="images/icons/icon_action_p.svg" alt="行動調査" class="child_list_item_img" />
-            </a>
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">素行調査</p>
-              <img src="images/icons/icon_behavior_p.svg" alt="素行調査" class="child_list_item_img" />
-            </a>
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">信用調査</p>
-              <img src="images/icons/icon_building_p.svg" alt="信用調査" class="child_list_item_img" />
-            </a>
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">嫌がらせ調査</p>
-              <img src="images/icons/icon_swearing_p.svg" alt="嫌がらせ調査" class="child_list_item_img" />
-            </a>
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">いじめ・ハラスメント捜索</p>
-              <img src="images/icons/icon_harassment_p.svg" alt="いじめ・ハラスメント捜索" class="child_list_item_img" />
-            </a>
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">盗聴器・盗聴器捜索</p>
-              <img src="images/icons/icon_eavesdropping_p.svg" alt="盗聴器捜索" class="child_list_item_img" />
-            </a>
-            <a href="#" class="child_list_item">
-              <p class="child_list_item_title">海外調査</p>
-              <img src="images/icons/icon_passport_p.svg" alt="海外調査" class="child_list_item_img" />
-            </a>
-          </div>
-        </div>
-        <a href="#" class="nav_menu_item">
-          依頼の流れ
-        </a>
-        <a href="#" class="nav_menu_item">
-          お客様の声
-        </a>
-        <a href="#" class="nav_menu_item">
-          会社案内
-        </a>
       </div>
     </nav>
   </header>
 
   <section class="kv">
-    
-      <p class="kv_message_main">ひとりで悩みを抱えていませんか?</p>
-      <div class="kv_message_sub">
-        <p class="kv_message_sub_inner">
-          私たちは
-          <span class="kv_message_emphasis">問題</span>を
-          <span class="kv_message_emphasis">解決</span>
-          に導く<br class="sm_only">
-          パートナーです
-        </p>
+    <p class="kv_message_main">ひとりで悩みを抱えていませんか?</p>
+    <div class="kv_message_sub">
+      <p class="kv_message_sub_inner">
+        私たちは
+        <span class="kv_message_emphasis">問題</span>を
+        <span class="kv_message_emphasis">解決</span>
+        に導く<br class="sm_only">
+        パートナーです
+      </p>
       </div>
+  </section>
+  
+  <section class="section_inner">
+    ここにバナーが入ります
   </section>
 
   <!-- このような被害やトラブルに対応しております。 -->
@@ -182,7 +182,7 @@
         <div class="cases_list_item_inner">
           <div class="cases_list_item_content">
             <header>
-              <span class="color-main_purple font_weight-500 text-8xl">「嫌がらせ被害」</span>
+              <span class="color-string_green font_weight-500 text-8xl">「嫌がらせ被害」</span>
             </header>
             <div class="text-sm mt-20">
               生活の様子を監視している、わざと大きな音を出して威嚇してくる、家の前にごみなどを撒かれる、車や自転車に傷をつけられる、郵便物や洗濯物を盗まれる、根も葉もない噂を流される…。
@@ -222,7 +222,7 @@
         <div class="cases_list_item_inner">
           <div class="cases_list_item_content">
           <header>
-            <span class="color-main_purple font_weight-500 text-8xl">「未定」</span>
+            <span class="color-string_green font_weight-500 text-8xl">「未定」</span>
           </header>
           <div class="text-sm mt-20">
             ダミーテキストが入ります
@@ -256,7 +256,7 @@
   <section class="main_green_grade pt-40 pb-40">
     <div class="text-3xl color-white belt_message">
       他社で断られたり、失敗したケースでもお任せください。<br class="lg_above_only">
-      法的対応が必要な場合、浮気・各種トラブルに強い弁護士のご紹介も可能です。
+      法的対応が必要な場合、ストーカー対策に強い弁護士との連携やご紹介も可能です。
     </div>
   </section>
 
@@ -328,11 +328,11 @@
         <div class="user_list_item_inner">
           <div class="user_list_item_content">
             <header class="text-lg font_weight-500">
-              はじめて探偵・興信所を利用する方へ
+              どこに相談すれば良いか分からない
             </header>
             <div class="text-sm mt-10">
-              はじめて探偵・興信所を利用する方は必ずご相談ください。正しい探偵・興信所の選び方や依頼時の注意点など初めて探偵・興信所を利用する方の相談に対応しています。
-              一人で悩まず、ぜひ一度ご相談ください。
+              はじめて被害に関する相談をされる場合は、当センターを必ずご利用ください。誰にも言えないお悩み事に真摯に耳を傾け、丁寧に対応いたします。ストーカー対策の専門家の正しい選び方や依頼時の注意点など、初めて探偵社を利用する方のご相談に対応しております。
+              一人で悩みを抱えずに、まずはお気軽にご相談ください。
             </div>
           </div>
           <img src="images/user_01.jpg" alt="user" class="user_list_item_img"/>
@@ -343,10 +343,12 @@
         <div class="user_list_item_inner">
           <div class="user_list_item_content">
             <header class="text-lg font_weight-500">
-              真実を知って前に進みたい方へ
+              安全で安心した生活を送りたい
             </header>
             <div class="text-sm mt-10">
-              真実を知ることで進むべき道が見えてきます。真実に向き合うためには少しの勇気が必要ですが、それまでの憶測や推測はすべて打ち消され、解決策を見出すことが出来るでしょう。
+              ストーカー対策の専門機関として、ストーカー行為や嫌がらせ被害でお悩みの方が抱える問題を迅速に解決し、
+              平穏な生活を取りもどすために必要な調査や対策を全国で実施しております。
+              ストーカー行為や嫌がらせ被害に対する予防策や再発防止策の提案、日常生活で起こり得る様々なトラブルに対する危機管理サポートなども積極的に行なっております。
             </div>
           </div>
           <img src="images/user_02.jpg" alt="user" class="user_list_item_img"/>
@@ -357,10 +359,11 @@
         <div class="user_list_item_inner">
           <div class="user_list_item_content">
             <header class="text-lg font_weight-500">
-              今の悩みを解決したい方へ
+              今の悩みや問題を解決したい
             </header>
             <div class="text-sm mt-10">
-              「悩み」を抱えるということは「疑念や不安を払拭できない」状態と言えます。悩みを解決するために必要な「情報」を得て解決する方法を知ったとき、それは悩みではなくなります。
+              「被害が収まらない」「被害や悩みを解決したい」といった際には、我慢せずに今すぐご相談ください。当センターの相談窓口は２４時間いつでも受け付けております。被害状況に応じた最適な解決策をご案内いたしますので、
+              自分だけでは解決することが難しいと思ったら、私たち専門家の力を活用することが解決への近道となることがあります。
             </div>
           </div>
           <img src="images/user_03.jpg" alt="user" class="user_list_item_img"/>
@@ -371,11 +374,11 @@
         <div class="user_list_item_inner">
           <div class="user_list_item_content">
             <header class="text-lg font_weight-500">
-              他社で断られたり・失敗して困っている方へ
+              他社で断られたり・失敗して困っている
             </header>
             <div class="text-sm mt-10">
-              探偵・興信所にも専門分野があります。失敗しない調査を行うには、正しい知識と豊富な経験、
-              そして優れた専門性が求められるため、実績のある専門家を選ぶことが大切です。他社で断られたり、失敗した場合でもご相談ください。
+              失敗しない調査・対策を行うには、正しい知識と豊富な経験、そして優れた専門性が求められるため、実績のある専門家を選ぶことが大切です。
+              私たちは「解決する」ことを目的とした調査・対策を行っておりますので、他社で断られたり、失敗した場合でもあきらめずにご相談ください。
             </div>
           </div>
           <img src="images/user_04.jpg" alt="user" class="user_list_item_img"/>
@@ -384,13 +387,13 @@
     </ul>
   </section>
 
-  <!-- 日本探偵調査センターの特徴 -->
+  <!-- ストーカー・嫌がらせ被害対策センターの特徴 -->
   <section>
     <div class="section_title">
       <div class="section_title_content">
         <img src="images/line_deco_01.png" alt="deco" class="section_title_deco front" />
         <img src="images/line_deco_01.png" alt="deco" class="section_title_deco rear" />
-        <p class="section_title_content_message section_border text-6xl">日本探偵調査センターの特徴</p>
+        <p class="section_title_content_message section_border text-6xl">ストーカー・嫌がらせ被害対策センターの特徴</p>
         <p class="section_title_content_message">はじめてのお客様に選ばれる５つの理由</p>
       </div>
     </div>
@@ -404,7 +407,7 @@
           </div>
           <div class="feature_item_content">
             <div class="feature_item_content_header">
-              <header class="text-3xl color-main_purple font_weight-500">
+              <header class="text-3xl color-string_green font_weight-500">
                 ご相談時にノウハウを分かりやすく解説
               </header>
               <p class="color-main_orange text-xl font_weight-500">
@@ -428,7 +431,7 @@
           </div>
           <div class="feature_item_content">
             <div class="feature_item_content_header">
-              <header class="text-3xl color-main_purple font_weight-500">
+              <header class="text-3xl color-string_green font_weight-500">
                 丁寧で分かりやすい料金説明
               </header>
               <p class="color-main_orange text-base font_weight-500">
@@ -452,7 +455,7 @@
           </div>
           <div class="feature_item_content">
             <div class="feature_item_content_header">
-              <header class="text-3xl color-main_purple font_weight-500">
+              <header class="text-3xl color-string_green font_weight-500">
                 業界屈指の調査力と提案力
               </header>
               <p class="color-main_orange text-xl font_weight-500">
@@ -476,7 +479,7 @@
           </div>
           <div class="feature_item_content">
             <div class="feature_item_content_header">
-              <header class="text-3xl color-main_purple font_weight-500">
+              <header class="text-3xl color-string_green font_weight-500">
                 料金割引特典・失敗保証制度
               </header>
               <p class="color-main_orange text-xl font_weight-500">
@@ -500,7 +503,7 @@
           </div>
           <div class="feature_item_content">
             <div class="feature_item_content_header">
-              <header class="text-3xl color-main_purple font_weight-500">
+              <header class="text-3xl color-string_green font_weight-500">
                 弁護士との連携・助言・サポート
               </header>
               <p class="color-main_orange text-xl font_weight-500">
@@ -533,20 +536,20 @@
           <li class="survey_list">
             <div class="survey_list_inner">
               <a href="#" class="survey_list_item main">
-                <header class="survey_list_item_title center">浮気調査</header>
-                <img src="images/icons/icon_cheating_p.svg" alt="浮気調査" class="survey_list_item_img" />
+                <header class="survey_list_item_title center">ストーカー調査<br>対策</header>
+                <img src="images/icons/icon_stalker_gr.svg" alt="トーカー調査対策" class="survey_list_item_img" />
               </a>
               <a href="#" class="survey_list_item main">
-                <header class="survey_list_item_title center">人探し<br>行方調査</header>
-                <img src="images/icons/icon_looking_p.svg" alt="行方調査" class="survey_list_item_img" />
+                <header class="survey_list_item_title center">嫌がらせ調査<br>対策</header>
+                <img src="images/icons/icon_swearing_gr.svg" alt="嫌がらせ調査対策" class="survey_list_item_img" />
               </a>
               <a href="#" class="survey_list_item main">
-                <header class="survey_list_item_title center">結婚信用調査</header>
-                <img src="images/icons/icon_marriage_p.svg" alt="結婚信用調査" class="survey_list_item_img" />
+                <header class="survey_list_item_title center">盗聴器・盗撮器<br>発見調査</header>
+                <img src="images/icons/icon_eavesdropping_gr.svg" alt="盗聴器・盗撮器発見調査" class="survey_list_item_img" />
               </a>
               <a href="#" class="survey_list_item main">
-                <header class="survey_list_item_title center">ストーカー対策</header>
-                <img src="images/icons/icon_stalker_p.svg" alt="ストーカー対策" class="survey_list_item_img" />
+                <header class="survey_list_item_title center">加害者との<br>協議・交渉サポート</header>
+                <img src="images/icons/icon_right_gr.svg" alt="加害者との協議・交渉サポート" class="survey_list_item_img" />
               </a href="#">
             </div>
           </li>
@@ -554,36 +557,36 @@
           <li class="survey_list">
             <div class="survey_list_inner">
               <a href="#" class="survey_list_item regular">
-                <header class="survey_list_item_title">家出人<br>失踪者捜索</header>
-                <img src="images/icons/icon_runaway_p.svg" alt="失踪者捜索" class="survey_list_item_img" />
+                <header class="survey_list_item_title">ストーカー<br>証拠収集</header>
+                <img src="images/icons/icon_stalker_01_gr.svg" alt="ストーカー証拠収集" class="survey_list_item_img" />
               </a>
               <a href="#" class="survey_list_item regular">
-                <header class="survey_list_item_title">行動調査</header>
-                <img src="images/icons/icon_action_p.svg" alt="行動調査" class="survey_list_item_img" />
+                <header class="survey_list_item_title">ストーカー<br>特定調査</header>
+                <img src="images/icons/icon_stalker_02_gr.svg" alt="ストーカー特定調査" class="survey_list_item_img" />
               </a>
               <a href="#" class="survey_list_item regular">
-                <header class="survey_list_item_title">素行調査</header>
-                <img src="images/icons/icon_behavior_p.svg" alt="素行調査" class="survey_list_item_img" />
+                <header class="survey_list_item_title">嫌がらせ<br>証拠収集</header>
+                <img src="images/icons/icon_swearing_01_gr.svg" alt="嫌がらせ証拠収集" class="survey_list_item_img" />
               </a>
               <a href="#" class="survey_list_item regular">
-                <header class="survey_list_item_title">信用調査</header>
-                <img src="images/icons/icon_building_p.svg" alt="信用調査" class="survey_list_item_img" />
+                <header class="survey_list_item_title">嫌がらせ<br>特定調査</header>
+                <img src="images/icons/icon_swearing_02_gr.svg" alt="嫌がらせ特定調査" class="survey_list_item_img" />
               </a>
               <a href="#" class="survey_list_item regular">
-                <header class="survey_list_item_title">嫌がらせ調査</header>
-                <img src="images/icons/icon_swearing_p.svg" alt="嫌がらせ調査" class="survey_list_item_img" />
+                <header class="survey_list_item_title">美人局・<br>ハニートラップ<br>調査</header>
+                <img src="images/icons/icon_honey_gr.svg" alt="美人局・ハニートラップ調査" class="survey_list_item_img" />
               </a>
               <a href="#" class="survey_list_item regular">
-                <header class="survey_list_item_title">いじめ・ハラスメント捜索</header>
-                <img src="images/icons/icon_harassment_p.svg" alt="いじめ・ハラスメント捜索" class="survey_list_item_img" />
+                <header class="survey_list_item_title">いじめ・<br>ハラスメント捜索</header>
+                <img src="images/icons/icon_harassment_gr.svg" alt="いじめ・ハラスメント捜索" class="survey_list_item_img" />
               </a>
               <a href="#" class="survey_list_item regular">
-                <header class="survey_list_item_title">盗聴器<br>盗聴器捜索</header>
-                <img src="images/icons/icon_eavesdropping_p.svg" alt="盗聴器捜索" class="survey_list_item_img" />
+                <header class="survey_list_item_title">未定</header>
+                <img src="images/icons/icon_wave_gr.svg" alt="未定" class="survey_list_item_img" />
               </a>
               <a href="#" class="survey_list_item regular">
-                <header class="survey_list_item_title">海外調査</header>
-                <img src="images/icons/icon_passport_p.svg" alt="海外調査" class="survey_list_item_img" />
+                <header class="survey_list_item_title">ネットストーカー・<br>SNS調査</header>
+                <img src="images/icons/icon_internet_gr.svg" alt="ネットストーカー・SNS調査" class="survey_list_item_img" />
               </a>
             </div>
           </li>
@@ -683,7 +686,7 @@
       </h2>
     
       <div class="second_offer_content text-2xl font_weight-700">
-        日本探偵調査センターでは、24時間いつでもご相談をお受けしています。<br>
+        ストーカー・嫌がらせ被害対策センターでは、24時間いつでもご相談をお受けしています。<br>
         カウンセラーがどんなことでも
         <span class="color-main_orange font_weight-700">「分かりやすく・丁寧に」</span>
         説明させていただきます。
@@ -693,10 +696,10 @@
   </section>
 
   <!-- ご相談から解決までの流れ -->
-  <section class="main_orange_grade-25">
+  <section class="main_orange_grade-20">
     <div class="section_inner">
       <h2 class="text-6xl center">
-        <img src="images/icons/icon_medal_01_r.svg" alt="メダル" class="section_icon">
+        <img src="images/icons/icon_medal_01_or.svg" alt="メダル" class="section_icon">
         ご相談から解決までの流れ
       </h2>
       <p class="center text-base">
@@ -707,7 +710,7 @@
           <div class="step_item_content">
             <header class="step_item_header">
               <div class="step_item_sign main_green_grade">STEP1</div>
-              <div class="color-main_purple text-lg font_weight-500">電話・メールでの無料相談</div>
+              <div class="color-string_green text-lg font_weight-500">電話・メールでの無料相談</div>
             </header>
             <div class="color-string_gray text-sm">
               悩みごとや困りごとの相談は24時間・365日いつでも受け付けております。
@@ -732,7 +735,7 @@
           <div class="step_item_content">
             <header class="step_item_header">
               <div class="step_item_sign main_green_grade">STEP2</div>
-              <div class="color-main_purple text-lg font_weight-500">面談・お見積もり</div>
+              <div class="color-string_green text-lg font_weight-500">面談・お見積もり</div>
             </header>
             <div class="color-string_gray text-sm">
               専任のカウンセラーが実際にお会いして、ご相談やお悩み事をお聞きします。
@@ -747,7 +750,7 @@
           <div class="step_item_content">
             <header class="step_item_header">
               <div class="step_item_sign main_green_grade">STEP3</div>
-              <div class="color-main_purple text-lg font_weight-500">ご契約・依頼申し込み</div>
+              <div class="color-string_green text-lg font_weight-500">ご契約・依頼申し込み</div>
             </header>
             <div class="color-string_gray text-sm">
               依頼申し込みの際には、事前に依頼内容や調査期間、費用の内訳などを詳しく説明いたします。
@@ -762,7 +765,7 @@
           <div class="step_item_content">
             <header class="step_item_header">
               <div class="step_item_sign main_green_grade">STEP4</div>
-              <div class="color-main_purple text-lg font_weight-500">予備調査・調査企画</div>
+              <div class="color-string_green text-lg font_weight-500">予備調査・調査企画</div>
             </header>
             <div class="color-string_gray text-sm">
               お客様から提供された情報をもとに、現場の下見などを行い、現場の状況や対象となる人物の周辺情報を収集します。
@@ -776,7 +779,7 @@
           <div class="step_item_content">
             <header class="step_item_header">
               <div class="step_item_sign main_green_grade">STEP5</div>
-              <div class="color-main_purple text-lg font_weight-500">本調査（証拠収集）</div>
+              <div class="color-string_green text-lg font_weight-500">本調査（証拠収集）</div>
             </header>
             <div class="color-string_gray text-sm">
               契約内容に基づいた入念な本調査を実施いたします。経験と実力を兼ね備えた調査チームが証拠を押さえます。
@@ -790,7 +793,7 @@
           <div class="step_item_content">
             <header class="step_item_header">
               <div class="step_item_sign main_green_grade">STEP6</div>
-              <div class="color-main_purple text-lg font_weight-500">アフターサポート</div>
+              <div class="color-string_green text-lg font_weight-500">アフターサポート</div>
             </header>
             <div class="color-string_gray text-sm">
               調査によって証拠が取得できましたら、お客様のご要望に沿った各種サポート業務を行います。
@@ -804,7 +807,7 @@
           <div class="step_item_content">
             <header class="step_item_header">
               <div class="step_item_sign main_green_grade">STEP6</div>
-              <div class="color-main_purple text-lg font_weight-500">弁護士・専門家の紹介</div>
+              <div class="color-string_green text-lg font_weight-500">弁護士・専門家の紹介</div>
             </header>
             <div class="color-string_gray text-sm">
               離婚や裁判、慰謝料請求、親権争いなどで法的な対応を必要とされるお客様には、弁護士や専門家を活用した円滑で確実な解決手段のご提案を行います。
@@ -818,7 +821,7 @@
           <div class="step_item_content">
             <header class="step_item_header">
               <div class="step_item_sign main_green_grade">STEP7</div>
-              <div class="color-main_purple text-lg font_weight-500">弁護士・専門家の紹介</div>
+              <div class="color-string_green text-lg font_weight-500">弁護士・専門家の紹介</div>
             </header>
             <div class="color-string_gray text-sm">
               離婚や裁判、慰謝料請求、親権争いなどで法的な対応を必要とされるお客様には、弁護士や専門家を活用した円滑で確実な解決手段のご提案を行います。
@@ -832,7 +835,7 @@
           <div class="step_item_content">
             <header class="step_item_header">
               <div class="step_item_sign main_green_grade">STEP8</div>
-              <div class="color-main_purple text-lg font_weight-500">アフターケア</div>
+              <div class="color-string_green text-lg font_weight-500">アフターケア</div>
             </header>
             <div class="color-string_gray text-sm">
               大切なことは、調査で得た証拠（情報）を活用して、お客様が望む未来に進んでいただくことです。
@@ -929,38 +932,56 @@
     <div class="section_inner">
       <div class="center">
         <h2 class="text-6xl section_border">探偵の基礎知識</h2>
-        <p class="center text-base color-main_purple ">探偵利用ガイド</p>
+        <p class="center text-base color-string_green ">探偵利用ガイド</p>
       </div>
       <div class="guide">
         <a href="#" class="guide_item">
           <div class="guide_item_sign main_green_grade">01</div>
-          <p class="guide_item_title color-main_purple">探偵業に関する法律とは</p>
-          <img src="images/icons/icon_law_p.svg" alt="icon_law" class="guide_item_img">
+          <p class="guide_item_title color-string_green">専門家の正しい選び方</p>
+          <img src="images/icons/icon_detective_gr.svg" alt="探偵のアイコン" class="guide_item_img">
         </a>
 
         <a href="#" class="guide_item">
           <div class="guide_item_sign main_green_grade">02</div>
-          <p class="guide_item_title color-main_purple">調査結果報告書とは</p>
-          <img src="images/icons/icon_document_p.svg" alt="icon_document" class="guide_item_img">
+          <p class="guide_item_title color-string_green">ストーカー対策マニュアル</p>
+          <img src="images/icons/icon_document_gr.svg" alt="マニュアルのアイコン" class="guide_item_img">
         </a>
 
         <a href="#" class="guide_item">
           <div class="guide_item_sign main_green_grade">03</div>
-          <p class="guide_item_title color-main_purple">調査依頼時の注意点</p>
-          <img src="images/icons/icon_attention_p.svg" alt="icon_attention" class="guide_item_img">
+          <p class="guide_item_title color-string_green">ストーカー規制法</p>
+          <img src="images/icons/icon_stalker_03_gr.svg" alt="ストーカーのアイコン" class="guide_item_img">
         </a>
 
         <a href="#" class="guide_item">
           <div class="guide_item_sign main_green_grade">04</div>
-          <p class="guide_item_title color-main_purple">安心できる探偵社の選び方</p>
-          <img src="images/icons/icon_check_p.svg" alt="icon_check" class="guide_item_img">
+          <p class="guide_item_title color-string_green">探偵業に関する法律</p>
+          <img src="images/icons/icon_law_gr.svg" alt="法律のアイコン" class="guide_item_img">
+        </a>
+
+        <a href="#" class="guide_item">
+          <div class="guide_item_sign main_green_grade">05</div>
+          <p class="guide_item_title color-string_green">盗聴器・盗撮器種類と被害</p>
+          <img src="images/icons/icon_eavesdropping_gr.svg" alt="盗聴器のアイコン" class="guide_item_img">
+        </a>
+
+        <a href="#" class="guide_item">
+          <div class="guide_item_sign main_green_grade">06</div>
+          <p class="guide_item_title color-string_green">未定</p>
+          <img src="images/icons/icon_wave_gr.svg" alt="" class="guide_item_img">
+        </a>
+
+        <a href="#" class="guide_item">
+          <div class="guide_item_sign main_green_grade">07</div>
+          <p class="guide_item_title color-string_green">未定</p>
+          <img src="images/icons/icon_stalkers_gr.svg" alt="" class="guide_item_img">
         </a>
       </div>
     </div>
   </section>
 
   <!-- last offer -->
-  <section class="main_orange_grade-25">
+  <section class="main_orange_grade-20">
     <div class="last_offer">
       <img src="images/counselor.png" alt="カウンセラー" class="last_offer_img">
       <div class="last_offer_content">
@@ -1250,10 +1271,10 @@
     </form>
   </section>
   
-  <!-- 日本探偵調査センターは全国に対応しております。 -->
+  <!-- ストーカー・嫌がらせ被害対策センターは全国に対応しております。 -->
   <section class="support main_green_grade-20">
     <div class="section_inner support_inner">
-      <h2 class="test-3xl center">日本探偵調査センターは全国に対応しております。</h2>
+      <h2 class="test-3xl center">ストーカー・嫌がらせ被害対策センターは全国に対応しております。</h2>
       <img src="images/japan_map.png" alt="日本地図" class="support_map_img">
       <ul class="support_list">
         <li class="support_list_item item-1">
@@ -1295,17 +1316,7 @@
 
   <footer class="main_green_grade">
     <div class="section_inner">
-      <div class="footer_logo_area">
-        <img src="images/JDI_logo.png" alt="JDI_logo" class="footer_logo"/>
-        <div>
-          <div class="text-xs">
-            Japan Detective Investigation Agency
-          </div>
-          <div>
-            <span class="text-xl font_weight-500">日本探偵調査センター</span>
-          </div>
-        </div>
-      </div>
+      <img src="images/JDI_logo.jpg" alt="JDI_logo" class="footer_logo"/>
       <section class="footer_list mt-20">
         <header class="footer_list_title">◆総合案内</header>
         <ul class="footer_list_inner main">
@@ -1356,7 +1367,7 @@
           </ul>
         </div>
       </section>
-      <p class="center text-xs color-white mt-50">Copyright © 2022 日本探偵調査センター All rights reserved.</p>
+      <p class="center text-xs color-white mt-50">Copyright © 2022 ストーカー・嫌がらせ被害対策センター All rights reserved.</p>
     </div>
   </footer>
 
@@ -1365,7 +1376,7 @@
     <div class="fixed_bannar_pc_inner">
       <img src="images/fixed_img.jpg" alt="オペレータ" class="fixed_bannar_pc_img">
       <div class="fixed_bannar_pc_message">
-        <p class="text-xs center font_weight-500">はじめての調査依頼は日本探偵調査センターへご相談ください。</p>
+        <p class="text-xs center font_weight-500">はじめての調査依頼はストーカー・嫌がらせ被害対策センターへご相談ください。</p>
         <p class="fixed_bannar_pc_message_caption">無料相談ダイヤル｜24時間・365日受付</p>
       </div>
 
@@ -1402,7 +1413,7 @@
       </div>
     </div>
     <div class="fixed_bannar_sp_info">
-      はじめての調査依頼は日本探偵調査センターへご相談ください。
+      はじめての調査依頼はストーカー・嫌がらせ被害対策センターへご相談ください。
     </div>
   </div>
 
