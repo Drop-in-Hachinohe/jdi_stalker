@@ -1789,6 +1789,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 500;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -1815,6 +1816,11 @@
   .belt_message {
     width: 1200px;
     margin: 0 auto;
+  }
+}
+@media (min-width: 1236px) {
+  .belt_message {
+    letter-spacing: -1px;
   }
 }
 
@@ -2348,7 +2354,6 @@
 .global_nav .nav_menu_item .child_list_item {
   background-color: white;
   transition-duration: 0.2s;
-  color: #1db3ab;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -2361,6 +2366,10 @@
 }
 .global_nav .nav_menu_item .child_list_item:hover {
   background-color: #d2f0ee;
+}
+.global_nav .nav_menu_item .child_list_item_title {
+  color: #11668b;
+  font-weight: 500;
 }
 .global_nav .nav_menu_item .child_list_item:not(:last-child) {
   border-bottom: solid 1px #1db3ab;
@@ -2498,6 +2507,11 @@
     justify-content: center;
   }
 }
+@media (min-width: 1024px) {
+  .first_offer_message {
+    width: 60%;
+  }
+}
 .first_offer_message_main {
   font-size: 1.3125rem; /* 21px */
 }
@@ -2528,10 +2542,23 @@
 }
 .first_offer_message_sub {
   padding-top: 35px;
+  font-weight: 500;
+  font-size: 1.0625rem; /* 17px */
+}
+@media (min-width: 640px) {
+  .first_offer_message_sub {
+    font-size: 1.125rem; /* 18px */
+  }
 }
 @media (min-width: 768px) {
   .first_offer_message_sub {
     padding-top: 30px;
+    font-size: 1.1875rem; /* 19px */
+  }
+}
+@media (min-width: 768px) and (min-width: 640px) {
+  .first_offer_message_sub {
+    font-size: 1.25rem; /* 20px */
   }
 }
 .first_offer_img {
@@ -2672,7 +2699,7 @@
 }
 @media (min-width: 1236px) {
   .last_offer_message_main {
-    font-size: 35px;
+    font-size: 34px;
   }
 }
 .last_offer_message_sub {
@@ -2745,7 +2772,7 @@
 }
 @media (min-width: 1236px) {
   .last_offer_dial_caption {
-    font-size: 45px;
+    font-size: 43px;
   }
 }
 .last_offer_dial_icon {
@@ -3189,6 +3216,7 @@
   color: white;
   border: solid 1px white;
   padding: 5px 50px;
+  transition-duration: 0.2s;
 }
 .survey_list_btn:hover {
   box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.5);
@@ -3199,7 +3227,7 @@
   }
 }
 .survey_list_btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(3px);
 }
 
 .voices_title_deco {
@@ -3958,6 +3986,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  background-color: #11668b;
 }
 .to_top .arrow {
   transform: translateY(5px);

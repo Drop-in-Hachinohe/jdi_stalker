@@ -529,7 +529,12 @@ $commonRed: #df3c23;
   display: flex;
   align-items: center;
   justify-content: center;
-  @include sectionX_padding
+  font-weight: 500;
+  @include sectionX_padding;
+  @media (min-width: 1236px) {
+    letter-spacing: -1px;
+  }
+  
 }
 
 .primary_btn {
@@ -922,11 +927,14 @@ $commonRed: #df3c23;
           &:hover {
             background-color: #d2f0ee;
           }
-          color: $mainGreen;
           padding: 10px 20px;
           display: flex;
           justify-content: space-between;
           align-items: center;
+          &_title {
+            color: $mainStringGreen;
+            font-weight: 500;
+          }
           &:not(:last-child) {
             border-bottom: solid 1px $mainGreen;
           }
@@ -1023,6 +1031,9 @@ $commonRed: #df3c23;
       flex-direction: column;
       justify-content: center;
     }
+    @media (min-width: 1024px) {
+      width: 60%;
+    }
     &_main {
       @include text-2xl;
       @media (min-width: 768px) {
@@ -1034,8 +1045,11 @@ $commonRed: #df3c23;
     }
     &_sub {
       padding-top: 35px;
+      font-weight: 500;
+      @include text-lg;
       @media (min-width: 768px) {
         padding-top: 30px;
+        @include text-xl;
       }
     }
   }
@@ -1125,7 +1139,7 @@ $commonRed: #df3c23;
         letter-spacing: normal;
       }
       @media (min-width: 1236px) {
-        font-size: 35px;
+        font-size: 34px;
       }
     }
     &_sub {
@@ -1179,7 +1193,7 @@ $commonRed: #df3c23;
         font-size: 40px;
       }
       @media (min-width: 1236px) {
-        font-size: 45px;
+        font-size: 43px;
       }
     }
     &_icon {
@@ -1494,9 +1508,7 @@ $commonRed: #df3c23;
       color: white;
       border: solid 1px white;
       padding: 5px 50px;
-      &:hover {
-        background-color: rgba(255, 255, 255, .2);
-      }
+      @include btn_hover_motion;
     }
   }
 }
@@ -2029,6 +2041,7 @@ $commonRed: #df3c23;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  background-color: $mainStringGreen;
   .arrow {
     transform: translateY(5px);
   }
