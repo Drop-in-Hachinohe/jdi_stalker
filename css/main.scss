@@ -1547,10 +1547,11 @@ $commonRed: #df3c23;
       border-radius: 10px;
       object-fit: cover;
       margin-top: 30px;
-      height: 150px;
+      height: 250px;
       @media (min-width: 640px) {
         width: 20%;
         margin-top: 0;
+        height: 150px;
       }
     }
     &_header {

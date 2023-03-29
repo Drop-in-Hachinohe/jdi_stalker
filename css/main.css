@@ -3269,12 +3269,13 @@
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: 30px;
-  height: 150px;
+  height: 250px;
 }
 @media (min-width: 640px) {
   .step_item_img {
     width: 20%;
     margin-top: 0;
+    height: 150px;
   }
 }
 .step_item_header {
