@@ -1730,6 +1730,22 @@
   transform: skewX(-45deg) translateX(-9px);
 }
 
+.box_list.show .box_list_item {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .box_list.show .box_list_item {
+    width: 100%;
+  }
+}
+.box_list.show .box_list_item:nth-of-type(even) {
+  background-color: rgba(29, 189, 172, 0.1);
+}
+.box_list.show .box_list_item_img {
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media (min-width: 768px) {
   .box_list {
     display: flex;

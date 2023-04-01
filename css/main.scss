@@ -475,6 +475,21 @@ $commonRed: #df3c23;
 
 // お客様の声やニュースで使っているリスト
 .box_list {
+  &.show {
+    .box_list_item {
+      @media (min-width: 768px) {
+        width: 100%;
+      }
+      padding: 20px;
+      &:nth-of-type(even) {
+        background-color: $mainGreen-10;
+      }
+      &_img {
+        max-height: 200px;
+        object-fit: cover;
+      }
+    }
+  }
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
