@@ -43,5 +43,22 @@ $(document).ready(function(){
   $("#js-to_top").click(function() {
     $("body,html").animate({scrollTop:0},800);
   });
+
+  $(".js-line").click(function() {
+    $("#js-modal").addClass("show");
+    $("#js-modal_container").addClass("show");
+  });
+  $("#js-modal_close").click(function() {
+    $("#js-modal").removeClass("show");
+    $("#js-modal_container").removeClass("show");
+  });
+  $("#js-modal").click(function() {
+    $("#js-modal").removeClass("show");
+    $("#js-modal_container").removeClass("show");
+  });
+
+  $("#js-modal_container").click(function(e) {
+    e.stopPropagation();
+  });
 });
 

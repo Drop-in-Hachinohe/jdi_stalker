@@ -1,5 +1,7 @@
 // 変数定義
 $mainGreen: #1db3ab;
+$mainGreen-50: rgba(29, 189, 172, .5);
+$mainGreen-10: rgba(29, 189, 172, .1);
 $mainOrange: #de520d;
 
 $mainStringRed: #d96666;
@@ -7,7 +9,7 @@ $mainStringGreen: #11668b;
 
 $mainRed: #b9272d;
 $markerPink: rgba(234, 147, 132, .5);
-$line: #009e5a;
+$line: #06c555;
 $borderGray: #d3d4d4;
 $stringGray: #4d4d4d;
 $commonRed: #df3c23;
@@ -57,6 +59,9 @@ $commonRed: #df3c23;
 }
 .color-common_red {
   color: $commonRed
+}
+.color-line {
+  color: $line;
 }
 
 // fontSize from tailWind 
@@ -908,7 +913,7 @@ $commonRed: #df3c23;
             @include sectionX_padding;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            // justify-content: ;
           }
         }
         &.header_hidden {
@@ -941,6 +946,9 @@ $commonRed: #df3c23;
           @media (min-width: 768px) {
             width: 33%;
             margin-bottom: 2px;
+            &:not(:nth-child(3n)) {
+              margin-right: 0.5%;
+            }
             &:not(:last-child) {
               border-bottom: none;
             }
@@ -2053,4 +2061,350 @@ $commonRed: #df3c23;
     bottom: 80px;
   }
 
+}
+
+.breadcrumbs {
+  margin-bottom: 20px;
+  a {
+    @include text-sm;
+    color: $stringGray;
+    padding-right: 5px;
+    &:not(:last-child)::after {
+      content: ">";
+      margin-left: 5px;
+    }
+  }
+}
+// 記事ページ
+.post {
+  &_wrapper {
+    padding-top: 100px;
+    @media (min-width: 768px) {
+      padding-top: 200px;
+    }
+  }
+  * {
+    line-height: 1.8;
+  }
+  h1 {
+    @include text-5xl;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: $mainGreen-10;
+    border-bottom: solid 3px $mainGreen;
+  }
+  h2 {
+    @include text-2xl;
+    position: relative;
+    padding: 5px 10px;
+    margin: 35px 0 15px;
+    font-weight: 500;
+    border-bottom: thick double $mainGreen;
+  }
+  h3 {
+    @include text-xl;
+    font-weight: 500;
+    margin: 30px 0 20px;
+    padding: 5px 10px;
+    border-bottom: solid 2px $mainGreen;
+    background-color: $mainGreen-10;
+    border-bottom: solid 3px $mainGreen;
+  }
+  h4 {
+    @include text-lg;
+    margin: 25px 0 15px;
+    font-weight: 500;
+    border-bottom: dotted 1px $mainGreen-50;
+  }
+  h5 {
+    @include text-base;
+    margin: 15px 0 10px;
+    font-weight: 500;
+  }
+  h6 {
+    @include text-sm();
+    font-weight: 500;
+  }
+
+  img {
+    max-width: 100%;
+  }
+  p {
+    @include text-base;
+    color: $stringGray;
+  }
+  a {
+    color: $mainGreen;
+    text-decoration: underline;
+  }
+  ul {
+    margin: 5px 0 5px 15px;
+  }
+  li {
+    list-style: disc;
+  }
+  table {
+    width: 100%;
+    margin: 10px 0px;
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+    td {
+      padding: 10px;
+      border: solid 1px #ccc;
+    }
+  }
+}
+
+@keyframes fadeup {
+  0% {
+    margin-top: 100px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 5%;
+  }
+}
+
+.modal {
+  &_overlay {
+    position: fixed;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    z-index: 200;
+    &.show {
+      display: flex;
+    }
+  }
+  &_container {
+    width: 90%;
+    height: 90%;
+    margin-top: 5%;
+    overflow: scroll;
+    background-color: white;
+    opacity: 0;
+    &.show {
+      animation: fadeup .5s ease;
+      opacity: 1;
+    }
+  }
+  &_close {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    @media (min-width: 768px) {
+      font-size: 50px;
+    }
+  }
+}
+
+.line {
+  &_section {
+    padding: 20px;
+    @media (min-width: 768px) {
+      padding: 20px 8% 50px;
+    }
+  }
+  &_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    @media (min-width: 768px) {
+      padding: 50px 30px;
+    }
+    &_message {
+      background-color: white;
+      padding: 5px 20px;
+      border-radius: 5px;
+      width: fit-content;
+      color: $line;
+      font-weight: 700;
+      position: relative;
+      margin-bottom: 30px;
+      @include text-2xl;
+      @media (min-width: 768px) {
+        @include text-3xl;
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        content: "";
+        bottom: -10px;
+        width: 0;
+        height: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-style: solid;
+        border-width: 25px 12.5px 0 12.5px;
+        border-color: white transparent transparent transparent;
+      }
+    }
+  }
+  &_official_logo {
+    width: 100%;
+    @media (min-width: 640px) {
+      width: 80%;
+    }
+    @media (min-width: 768px) {
+      width: 500px;
+    }
+    
+  }
+  &_content {
+    border-radius: 10px;
+    background-color: white;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &_desc {
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+    padding: 20px 30px;
+  }
+  &_chat_img {
+    width: 100%;
+    padding: 20px;
+    max-height: 300px;
+    @media (min-width: 640px) {
+      width: 300px;
+      margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+      width: 40%;
+      padding: 20px 30px 0 0;
+      max-height: 400px;
+    }
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  &_register {
+    &_sp {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      &_desc {
+        width: 100%;
+        @media (min-width: 768px) {
+          width: 60%;
+          padding-right: 20px;
+        }
+      }
+    }
+    &_img_btn {
+      display: inline-block;
+      width: 400px;
+      margin-top: 30px;
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &_pc {
+      margin-top: 80px;
+    }
+    &_step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+      &_sign {
+        background-color: $line;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 10px 10px 0 0;
+        * {
+          font-family: "Avant Garde";
+        }
+      }
+      &_item {
+        width: 100%;
+        margin-bottom: 50px;
+        box-shadow: 2px 2px 10px 0 rgba(0,0,0,.2);
+        border-radius: 10px;
+        position: relative;
+        @media (min-width: 640px) {
+          width: 80%;
+        }
+        @media (min-width: 768px) {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0;
+        }
+        &:not(:last-child) {
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            position: absolute;
+            border-width: 20px 20px 0 20px;
+            border-color: $line transparent transparent transparent;
+            bottom: -30px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            @media (min-width: 768px) {
+              border-width: 3vw 0 3vw 1.5vw;
+              border-color: transparent transparent transparent $line;
+              right: -3vw;
+              left: auto;
+              top: 50%;
+              transform: translate(0, -50%);
+            }
+          }
+        }
+      }
+      &_content {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        padding: 30px 20px 0;
+        &.img {
+          background-color: #cdf3dd;
+          img {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+        &.qr {
+          padding: 20px 20px 10px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      &_desc {
+        @include text-sm;
+        padding: 10px 10px 20px;
+      }
+    }
+  }
 }

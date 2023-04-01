@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/ress.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header id="js-header" class="header">
+    <div id="js-header_main" class="header_inner">
+      <div class="header_main">
+        <a href="#" class="header_main_logo_area">
+          <img src="images/JDI_logo.jpg" alt="JDI_logo" class="header_main_logo"/>
+        </a>
+        <div class="header_offer">
+          <div class="header_offer_dial md_above_only">
+            <div class="free_dial">
+              <img src="images/icons/free_dial_or.png" alt="フリーダイヤル" class="free_dial_icon" />
+              <span class="text-3xl color-main_orange font_weight-700">0120-334-994</span>
+            </div>
+            <div class="header_offer_dial_caption main_orange_grade text-sm">
+              24時間・365日・相談無料
+            </div>
+          </div>
+          <div class="header_offer_other">
+            <a href="#" class="header_offer_other_item offer_item bg-line line">
+              <img src="images/icons/line_icon.png" alt="LINE ロゴ" class="header_offer_other_icon offer_icon"/>
+              <p class="text-sm font_weight-500  md_above_only">LINE無料相談</p>
+            </a>
+            <a href="#contact" class="header_offer_other_item offer_item main_orange_grade">
+              <img src="images/icons/mail_icon.png" alt="メール ロゴ" class="header_offer_other_icon offer_icon" />
+              <p class="text-sm font_weight-500  md_above_only">メール無料相談</p>
+            </a>
+            <!-- ここから下はmdサイズ未満の時にだけ表示するもの -->
+            <div class="header_offer_other_item offer_item main_orange_grade md_only">
+              <img src="images/icons/free_dial_w.png" alt="フリーダイヤル ロゴ" class="header_offer_other_icon offer_icon" />
+            </div>
+            <!-- スマホのメニューボタンを「メニュー」表記にする場合 -->
+            <!-- <div id="js-nav_menu" class="header_menu_btn md_only">
+            </div> -->
+            <div id="js-nav_menu" class="header_hamburger md_only">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- ここから下段 -->
+    <nav class="global_nav main_green_grade">
+      <div id="js-global_nav" class="global_nav_inner">
+        <a href="#" class="global_nav_logo">
+          <img src="images/JDI_logo.jpg" alt="JDI_logo" class="global_nav_logo_img"/>
+        </a>
+        <div class="nav_menu">
+          <a href="#" class="nav_menu_item">
+            私たちの特徴
+          </a>
+          <div id="js-nav_menu_item_parent" class="nav_menu_item parent">
+            調査項目
+            <div id="js-child_list" class="child_list">
+              <div class="child_list_inner">
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">浮気調査</p>
+                  <img src="images/icons/icon_cheating_p.svg" alt="浮気調査" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">人探し・行方調査</p>
+                  <img src="images/icons/icon_looking_p.svg" alt="行方調査" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">結婚信用調査</p>
+                  <img src="images/icons/icon_marriage_p.svg" alt="結婚信用調査" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">ストーカー対策</p>
+                  <img src="images/icons/icon_stalker_p.svg" alt="ストーカー対策" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">家出人・失踪者捜索</p>
+                  <img src="images/icons/icon_runaway_p.svg" alt="失踪者捜索" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">行動調査</p>
+                  <img src="images/icons/icon_action_p.svg" alt="行動調査" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">素行調査</p>
+                  <img src="images/icons/icon_behavior_p.svg" alt="素行調査" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">信用調査</p>
+                  <img src="images/icons/icon_building_p.svg" alt="信用調査" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">嫌がらせ調査</p>
+                  <img src="images/icons/icon_swearing_p.svg" alt="嫌がらせ調査" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">いじめ・ハラスメント捜索</p>
+                  <img src="images/icons/icon_harassment_p.svg" alt="いじめ・ハラスメント捜索" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">盗聴器・盗聴器捜索</p>
+                  <img src="images/icons/icon_eavesdropping_p.svg" alt="盗聴器捜索" class="child_list_item_img" />
+                </a>
+                <a href="#" class="child_list_item">
+                  <p class="child_list_item_title">海外調査</p>
+                  <img src="images/icons/icon_passport_p.svg" alt="海外調査" class="child_list_item_img" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="nav_menu_item">
+            依頼の流れ
+          </a>
+          <a href="#" class="nav_menu_item">
+            お客様の声
+          </a>
+          <a href="#" class="nav_menu_item">
+            会社案内
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="section_inner post_wrapper">
+    <div class="breadcrumbs">
+      <a href="#">
+        ホーム
+      </a>
+      <a href="#">
+        探偵ニュース
+      </a>
+      <a href="#">
+        キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+      </a>
+    </div>
+    <div class="post">
+      <h1>恩師の行方調査</h1>
+      <p><img alt="恩師の行方調査" src="images/sample/1674196614.jpg" /></p>
+  
+      <p>
+        私たちはストーカー・嫌がらせ対策の専門家として、どんなに難しい調査や深刻な被害であっても、問題を解決するまでしっかりとサポートします。
+        被害を解決するにあたり、被害状況に応じた証拠収集・加害者の特定を行ったうえで、それらの証拠を用いて弁護士事務所や警察の協力を得て、確実に被害を食い止め、問題を解決し、再発を防ぐためのサポートを行います。
+      </p>
+      <h2>浮気調査の流れ(メニュータイトル/h2)
+      </h2>
+      <ul class="navi">
+        <li><a href="#column01">> ① キャバ嬢と夫の浮気を疑う妻が浮気調査を依頼した経緯</a></li>
+        <li><a href="#column02">> ② 浮気調査とは？浮気調査を依頼する基準と目的</a></li>
+        <li><a href="#column03">> ③ キャバ嬢と夫の浮気を疑う妻が浮気調査を依頼してみて</a></li>
+        <li><a href="#column04">> 浮気調査で当探偵社が選ばれる理由・誇れる4つの強み</a></li>
+        <li><a href="#column05">> まずは無料相談を。お気軽にお問い合わせください！</a></li>
+      </ul>
+      <h3 id="column01">(h3)① キャバ嬢と夫の浮気を疑う妻が浮気調査を依頼した経緯</h3>
+      <h4>(h4)タイトル１</h4>
+      <p>
+        自分自身の過去を振り返った時、初恋相手や旧友、お世話になった恩師を思い出す事があると思いますが、
+        実際に探している相手が何処でどんな生活をしているのか気になるという方も少なくはないと思います。
+        しかし、自分勝手に相手の都合や状況も分からずに連絡などをしてしまうと、相手に迷惑をかけてしまう可能性もあるという事から、
+        事前に調査を行い相手の状況をある程度確認した上で連絡を試みたりするケースが多いようです。
+      </p>
+  
+      <h4>(h4)タイトル１</h4>
+      <p>
+        初恋相手や昔の友人、知人を探したいと言った調査相談・ご依頼は非常に多いといえます。
+        情報が古いケースも多いですが、相手が逃げたり身を隠した生活しているという事でない限り、現在の消息を判明させる事は可能です。
+        少ない情報しかお持ちでない場合でも、諦めずにご相談下さい。
+      </p>
+  
+      <h3 id="column02">恩師の行方調査の手法例</h3>
+      <p><strong>事例</strong></p>
+      <hr>
+      <p>
+        <span style="color: rgb(231, 76, 60);">
+          <span class="red"><strong>恩師の基本情報確認</strong></span>
+        </span>
+      </p>
+  
+      <h3 id="column03">恩師の行方調査の料金費用</h3>
+      <p><strong>恩師の行方調査の実際の料金事例</strong></p>
+      <hr>
+      <p>
+        恩師、先生の行方調査は、手法や期間、時間などによって案件ごとに費用が異なります。
+        下記は、実際に調査士会がお受けした行方調査の実例です。
+      </p>
+      <p>&nbsp;</p>
+  
+      <p>ケース1　所在確認調査 / 期間5日間/ 難易度C</p>
+  
+      <table border="1" cellpadding="1" cellspacing="1" style="width: 350px;">
+        <tbody>
+          <tr>
+            <td>
+              <p>調査 基本料金</p>
+            </td>
+            <td>
+              <p>100,000円</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>情報収集料金</p>
+            </td>
+            <td>
+              <p>15,000円</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>経費（交通費等）</p>
+            </td>
+            <td>
+              <p>6,500円</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>合計</p>
+            </td>
+            <td>
+              <p>121,500円（税別）</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        情報収集調査では、必要に応じ取得した情報数に費用がかかります。
+        また調査に必要な場合は交通費等も発生する場合があります。
+      </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+  
+      <h3 id="column04">恩師の行方調査依頼</h3>
+      <h4>恩師の行方調査依頼</h4>
+  
+      <p>
+        恩師探しの調査依頼をお考えの際は、対象となる人物情報などをわかる範囲でご用意下さい。
+        当時の住所や関連する情報などを元に調査費用や調査期間の算出をし、出来るだけ負担の少ない調査を企画する事も可能です。 
+        また、当会では人探し調査の専門担当者が随時対応しています。
+        人探し調査にかかる費用や調査方法などについても詳しくご説明しておりますので是非ご利用下さい。もちろん費用はかかりません。
+      </p>
+  
+      <h5>恩師の所在調査についての必要情報例</h5>
+      <ul>
+        <li>恩師の個人情報（氏名・生年月日・出身校など）</li>
+        <li>在籍時の大まかな居住エリア</li>
+        <li>家族情報</li>
+        <li>卒業後に得た情報の有無（ある場合はいつ頃のものか・どの様な情報か）</li>
+      </ul>
+  
+      <p>&nbsp;</p>
+      <p>
+        行方調査を行う場合には、どんな些細な出来事でも構いませんので
+        <span style="color:#2980b9;">情報</span>があればあるほど
+        <span style="color:#2980b9;">調査</span>が<span style="color:#2980b9;">スムーズ</span>
+        に行うことができます。これまでの行動と比較をすることによって、同級生の消息を確認できる場合もあります。
+        現時点で対象となる相手についてよく思い出しておくことや周りの人間からの情報収集なども行ってみることから始めてみましょう。
+      </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+                
+      <h3 id="column05">恩師の行方調査についての質問と答え</h3>
+      <h4>Q1.高校時代の同窓会を開こうと幹事をしているのですが、先生と連絡がとれず、誰も実家なども知らないのですがそれでも見つけられますか？</h4>
+      <p>A.調査によって見つけていく事は可能です。お持ちの情報を専門家にご相談下さい。</p>
+      <p>&nbsp;</p>
+      <h4>Q2.調査を依頼してもし見つからなかった場合は、調査費用はかからないですか？</h4>
+      <p>A.成功報酬プランもありますが、調査で動くにあたり費用は発生致します。</p>
+      <p>&nbsp;</p>
+      <h4>Q3.学生時代の卒業アルバムを入手することはできますか？おそらくそこに先生の住所も載っていたように思うのですが。</h4>
+      <p>A.持っている方がいらっしゃれば、入手は可能です。まずはお持ちの方を探していく形になります。</p>
+      <p>&nbsp;</p>
+      <h4>恩師の行方、所在を知りたい方へ</h4>
+      <p>
+        学生時代にお世話になった先生に会って昔話をしたり、近況報告をしたいなど思うことはあると思います。
+        在籍していた学校や友人に聞いても何一つ情報が無くてどのように探せばいいのかが分からないという方がほとんどかと思います。
+        そんな際は知識のある探偵や興信所に相談してみて下さい。様々な知識を持った専門家がお答え致します。
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <p>恩師の行方調査の記事作成者</p>
+              <p>
+                探偵業界20年以上の指導者のもと、人探し調査相談担当者が書きました。
+                日々多くの相談者からのお悩み、ご相談をお受けしています。
+                少しでも皆さまの問題解決の力となれるよう対応しております。
+              </p>
+              <p>2023/1/20　最新事項追記</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-4xl mt-50 font_weight-500">&lt;関連調査項目&gt;</div>
+    <hr>
+    <div class="box_list show mt-50">
+      <a href="#" class="box_list_item">
+        <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+        <div class="box_list_item_content">
+          <p class="text-sm">2023-1-23</p>
+          <p class="text-lg font_weight-500">
+            キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+          </p>
+          <p class="text-sm mt-20">
+            キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+          </p>
+        </div>
+      </a>
+
+      <a href="#" class="box_list_item">
+        <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+        <div class="box_list_item_content">
+          <p class="text-sm">2023-1-23</p>
+          <p class="text-lg font_weight-500">
+            キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+          </p>
+          <p class="text-sm mt-20">
+            キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+          </p>
+        </div>
+      </a>
+
+      <a href="#" class="box_list_item">
+        <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+        <div class="box_list_item_content">
+          <p class="text-sm">2023-1-23</p>
+          <p class="text-lg font_weight-500">
+            キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+          </p>
+          <p class="text-sm mt-20">
+            キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+          </p>
+        </div>
+      </a>
+
+      <a href="#" class="box_list_item">
+        <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+        <div class="box_list_item_content">
+          <p class="text-sm">2023-1-23</p>
+          <p class="text-lg font_weight-500">
+            キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+          </p>
+          <p class="text-sm mt-20">
+            キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+          </p>
+        </div>
+      </a>
+
+      <a href="#" class="box_list_item">
+        <img src="images/JDI_default.jpg" alt="デフォルト画像" class="box_list_item_img">
+        <div class="box_list_item_content">
+          <p class="text-sm">2023-1-23</p>
+          <p class="text-lg font_weight-500">
+            キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+          </p>
+          <p class="text-sm mt-20">
+            キャバクラ好きの夫が浮気しました│浮気調査の相談事例
+          </p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  <footer class="main_green_grade">
+    <div class="section_inner">
+      <img src="images/JDI_logo.jpg" alt="JDI_logo" class="footer_logo"/>
+      <section class="footer_list mt-20">
+        <header class="footer_list_title">◆総合案内</header>
+        <ul class="footer_list_inner main">
+          <li class="footer_item">私たちの特徴</li>
+          <li class="footer_item">調査項目</li>
+          <li class="footer_item">調査料金</li>
+          <li class="footer_item">依頼の流れ</li>
+          <li class="footer_item">お客様の声</li>
+          <li class="footer_item">会社案内</li>
+        </ul>
+      </section>
+      <section class="footer_list sub_wrapper mt-35">
+        <div class="footer_list sub_item">
+          <header class="footer_list_title">◆ガイド</header>
+          <ul class="footer_list_inner sub">
+            <li class="footer_item">・安心できる探偵社の選び方</li>
+            <li class="footer_item">・調査依頼時の注意点</li>
+            <li class="footer_item">・調査結果報告書とは</li>
+            <li class="footer_item">・探偵業に関する法律とは</li>
+          </ul>
+        </div>
+
+        <div class="footer_list sub_item">
+          <header class="footer_list_title">◆募集要項</header>
+          <ul class="footer_list_inner sub">
+            <li class="footer_item">調査員求人募集</li>
+            <li class="footer_item">相談員求人募集</li>
+            <li class="footer_item">探偵代理店募集</li>
+            <li class="footer_item">探偵業務委託、調査委託（アウトソーシング）</li>
+          </ul>
+        </div>
+       
+        <div class="footer_list sub_item">
+          <header class="footer_list_title">◆ヘルプ</header>
+          <ul class="footer_list_inner sub">
+            <li class="footer_item">プライバシーポリシー</li>
+            <li class="footer_item">特定商取引法に基づく表記</li>
+            <li class="footer_item">よくある質問（Q＆A）</li>
+            <li class="footer_item">サイトマップ</li>
+          </ul>
+        </div>
+       
+        <div class="footer_list sub_item">
+          <header class="footer_list_title">◆言語</header>
+          <ul class="footer_list_inner sub">
+            <li class="footer_item">・ENGLISH（英語）</li>
+            <li class="footer_item">・中文（中国語）</li>
+          </ul>
+        </div>
+      </section>
+      <p class="center text-xs color-white mt-50">Copyright © 2022 日本探偵調査センター All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 下部fixedバナー(PC用) -->
+  <div class="fixed_bannar fixed_bannar_pc md_above_only">
+    <div class="fixed_bannar_pc_inner">
+      <img src="images/fixed_img.jpg" alt="オペレータ" class="fixed_bannar_pc_img">
+      <div class="fixed_bannar_pc_message">
+        <p class="text-xs center font_weight-500">はじめての調査依頼は日本探偵調査センターへご相談ください。</p>
+        <p class="fixed_bannar_pc_message_caption">無料相談ダイヤル｜24時間・365日受付</p>
+      </div>
+
+      <div class="fixed_bannar_pc_dial free_dial">
+        <img src="images/icons/free_dial_or.png" alt="フリーダイヤル" class="free_dial_icon" />
+        <span class="fixed_bannar_pc_dial_number color-main_orange font_weight-700 free_dial_number">0120-334-994</span>
+      </div>
+      <div class="fixed_bannar_pc_mail">
+        <p class="text-sm center font_weight-500">＼ 今すぐ相談 ／</p>
+        <a href="#contact" class="offer_item main_orange_grade">
+          <img src="images/icons/mail_icon.png" alt="メール ロゴ" class="offer_icon" />
+          <p class="text-sm font_weight-500">メールで相談</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 下部fixedバナー(SP用) -->
+  <div class="fixed_bannar fixed_bannar_sp md_only">
+    <div class="fixed_bannar_sp_offer">
+      <div class="offer_list_item">
+        <p class="text-sm center font_weight-500">＼ 24時間365日相談無料 ／</p>
+        <div class="offer_item">
+          <img src="images/icons/free_dial_w.png" alt="フリーダイヤル" class="fixed_bannar_sp_icon offer_icon" />
+          <span class="font_weight-700 free_dial_number ">0120-334-994</span>
+        </div>
+      </div>
+      <div class="offer_list_item">
+        <p class="text-sm center font_weight-500">＼ 今すぐ相談 ／</p>
+        <a href="#contact" class="offer_item">
+          <img src="images/icons/mail_icon.png" alt="メール ロゴ" class="fixed_bannar_sp_icon offer_icon" />
+          <p class="font_weight-500">メールで相談する</p>
+        </a>
+      </div>
+    </div>
+    <div class="fixed_bannar_sp_info">
+      はじめての調査依頼は日本探偵調査センターへご相談ください。
+    </div>
+  </div>
+
+  <div id="js-to_top" class="to_top main_green_grade">
+    <p class="arrow">^</p>
+    <p class="top">TOP</p>
+  </div>
+</body>
+</html>
