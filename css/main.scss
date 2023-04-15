@@ -486,6 +486,9 @@ $commonRed: #df3c23;
       }
       &_img {
         max-height: 200px;
+        @media (min-width: 480px) {
+          max-height: none;
+        }
         object-fit: cover;
       }
     }
