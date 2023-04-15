@@ -496,18 +496,31 @@ $commonRed: #df3c23;
     flex-wrap: wrap;
   }
   &_item {
+    display: block;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    @media (min-width: 480px) {
+      display: flex;
+      align-items: stretch;
+    }
     @media (min-width: 768px) {
       width: 48%;
     }
-    display: flex;
     &_img {
-      width: 30%;
+      width: 100%;
+      object-fit: cover;
+      max-height: 300px;
+      @media (min-width: 480px) {
+        width: 30%;
+        max-height: none;
+      }
     }
     &_content {
-      width: 70%;
-      padding-left: 20px;
+      width: 100%;
+      @media (min-width: 480px) {
+        width: 70%;
+        padding-left: 20px;
+      }
     }
   }
 }
@@ -520,6 +533,16 @@ $commonRed: #df3c23;
   &_icon {
     width: 50px;
     padding-right: 5px;
+    @media (min-width: 768px) and  (max-width: 813px) {
+      width: 35px;
+      padding-right: 1px;
+    }
+  }
+  &_number {
+    @include text-3xl;
+    @media (min-width: 768px) and  (max-width: 813px) {
+      @include text-xl;
+    }
   }
 }
 
@@ -592,7 +615,7 @@ $commonRed: #df3c23;
   &_message {
     &_main {
       @include sectionX_padding;
-      padding: 50px 0 30px;
+      padding: 50px 10px 30px;
       font-size: 30px;
       @media (min-width: 768px) {
         font-size: 40px;
@@ -687,17 +710,22 @@ $commonRed: #df3c23;
         text-align: center;
         padding: 0 10px;
         color: white;
+        @include text-sm;
+        @media (min-width: 768px) and  (max-width: 813px) {
+          @include text-xs;
+        }
       }
     }
     &_other {
       display: flex;
+      align-items: center;
       @media (min-width: 768px) {
         display: block;
       }
       &_item {
         @media (max-width: 767px) {
-          width: 45px;
-          height: 45px;
+          width: 40px;
+          height: 40px;
           border-radius: 50%;
         }
         @include btn_hover_motion;
@@ -712,29 +740,6 @@ $commonRed: #df3c23;
       }
     }
   }
-  // スマホのメニューボタンを「メニュー」表記にする場合のclass
-  // &_menu_btn {
-  //   border: solid 1px $mainGreen;
-  //   border-radius: 5px;
-  //   position: relative;
-  //   width: 50px;
-  //   height: 45px;
-  //   &:after {
-  //     content: "メニュー";
-  //     font-size: 12px;
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     position: absolute;
-  //     width: 100%;
-  //     height: 100%;
-  //   }
-  //   &.opened {
-  //     &:after {
-  //       content: "閉じる";
-  //     }
-  //   }
-  // }
   &_hamburger {
     display: flex;
     justify-content: center;
@@ -742,7 +747,7 @@ $commonRed: #df3c23;
     position: relative;
     box-sizing: content-box;
     padding: 0;
-    width: 45px;
+    width: 35px;
     height: 45px;
     span {
       position: absolute;
@@ -1617,6 +1622,34 @@ $commonRed: #df3c23;
       }
     }
    
+  }
+}
+
+.faq {
+  &_item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &_question {
+      @include text-lg;
+      font-weight: 500;
+      line-height: 1.3;
+      color: $mainStringGreen;
+      &::before {
+        content: "Q";
+        font-family: "Avant Garde";
+        color: $mainStringGreen;
+        font-size: 30px;
+        margin-right: 10px;
+      }
+    }
+    &_answer {
+      @include text-sm;
+      background-color: #f0f0f0;
+      margin-top: 10px;
+      padding: 10px 15px;
+      border-radius: 10px;
+    }
   }
 }
 
