@@ -2338,13 +2338,18 @@
 }
 @media (min-width: 768px) {
   .global_nav .nav_menu_item {
-    padding: 10px 20px;
+    padding: 10px;
   }
   .global_nav .nav_menu_item:not(:last-child) {
     border-bottom: none;
     border-right: solid 1px white;
     display: flex;
     align-items: center;
+  }
+}
+@media (min-width: 800px) {
+  .global_nav .nav_menu_item {
+    padding: 10px 20px;
   }
 }
 @media (min-width: 768px) {

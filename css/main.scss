@@ -871,13 +871,16 @@ $commonRed: #df3c23;
         background: rgba(255,255,255,0.3);
       }
       @media (min-width: 768px) {
-        padding: 10px 20px;
+        padding: 10px;
         &:not(:last-child) {
           border-bottom: none;
           border-right: solid 1px white;
           display: flex;
           align-items: center;
         }
+      }
+      @media (min-width: 800px) {
+        padding: 10px 20px;
       }
       &.parent {
         &:hover .child_list {
